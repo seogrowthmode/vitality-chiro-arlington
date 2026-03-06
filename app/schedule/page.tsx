@@ -1,0 +1,71 @@
+import type { Metadata } from "next";
+import ScrollReveal from "@/components/ScrollReveal";
+import PageHero from "@/components/PageHero";
+
+export const metadata: Metadata = {
+  title: "Schedule Appointment",
+  description: "Schedule your $149 new patient exam at Vitality Family Chiropractic in Arlington TX. 3 doctors. Same-day appointments. Se Habla Español.",
+};
+
+export default function SchedulePage() {
+  return (
+    <>
+      <PageHero variant="warm" minHeight="min-h-[35vh]" breadcrumbs={[{ label: "Home", href: "/" }, { label: "Schedule" }]} eyebrow="BOOK YOUR APPOINTMENT" eyebrowColor="orange" titleLarge="Schedule your visit." titleLargeColor="teal" subtitle="Same-day appointments available. Se Habla Español." />
+
+      {/* CENTERED FORM */}
+      <ScrollReveal><section className="py-20 bg-white"><div className="max-w-[580px] mx-auto px-5">
+        <div className="bg-white rounded-[18px] shadow-[var(--shadow-card-lg)] border-t-4 border-primary overflow-hidden p-7 sm:p-10">
+          <div className="text-[1.4rem] font-black text-center mb-2"><span className="text-accent">$149</span> New Patient Exam</div>
+          <p className="text-center text-[0.88rem] text-text-muted mb-6">Consultation + Exam + X-Rays + First Adjustment<br /><span className="text-primary font-bold">Save $171</span> &mdash; normally $320</p>
+          <form className="space-y-3.5">
+            <div><label className="block text-[0.78rem] font-bold mb-1">First Name *</label><input type="text" placeholder="First Name" required className="w-full px-3.5 py-3 border-[1.5px] border-border rounded-[10px] text-[0.9rem] bg-linen focus:border-primary focus:bg-white outline-none transition-colors" /></div>
+            <div><label className="block text-[0.78rem] font-bold mb-1">Last Name *</label><input type="text" placeholder="Last Name" required className="w-full px-3.5 py-3 border-[1.5px] border-border rounded-[10px] text-[0.9rem] bg-linen focus:border-primary focus:bg-white outline-none transition-colors" /></div>
+            <div><label className="block text-[0.78rem] font-bold mb-1">Phone *</label><input type="tel" placeholder="(817) 555-0123" required className="w-full px-3.5 py-3 border-[1.5px] border-border rounded-[10px] text-[0.9rem] bg-linen focus:border-primary focus:bg-white outline-none transition-colors" /></div>
+            <div><label className="block text-[0.78rem] font-bold mb-1">Email *</label><input type="email" placeholder="you@email.com" required className="w-full px-3.5 py-3 border-[1.5px] border-border rounded-[10px] text-[0.9rem] bg-linen focus:border-primary focus:bg-white outline-none transition-colors" /></div>
+            <div>
+              <label className="block text-[0.78rem] font-bold mb-1">Reason for Visit</label>
+              <select className="w-full px-3.5 py-3 border-[1.5px] border-border rounded-[10px] text-[0.9rem] bg-linen focus:border-primary focus:bg-white outline-none transition-colors">
+                <option value="">Select one...</option>
+                <option>Pregnancy / Prenatal</option>
+                <option>Pediatric (Baby/Child)</option>
+                <option>Back Pain</option>
+                <option>Neck Pain</option>
+                <option>Headaches / Migraines</option>
+                <option>Sports Injury</option>
+                <option>Auto Accident</option>
+                <option>Nutrition</option>
+                <option>General Wellness</option>
+                <option>Other</option>
+              </select>
+            </div>
+            <div>
+              <label className="block text-[0.78rem] font-bold mb-1">Preferred Language</label>
+              <select className="w-full px-3.5 py-3 border-[1.5px] border-border rounded-[10px] text-[0.9rem] bg-linen focus:border-primary focus:bg-white outline-none transition-colors">
+                <option>English</option>
+                <option>Espa&ntilde;ol</option>
+              </select>
+            </div>
+            <div>
+              <label className="block text-[0.78rem] font-bold mb-1">Anything else we should know?</label>
+              <textarea rows={3} placeholder="Optional — tell us about your concerns..." className="w-full px-3.5 py-3 border-[1.5px] border-border rounded-[10px] text-[0.9rem] bg-linen focus:border-primary focus:bg-white outline-none transition-colors resize-y" />
+            </div>
+            <button type="submit" className="w-full py-4 bg-primary text-white rounded-[16px] font-bold text-[1rem] hover:bg-primary-dark transition-colors cursor-pointer">Book My Appointment &rarr;</button>
+          </form>
+          <p className="text-center text-[0.78rem] text-text-muted mt-4">Se Habla Espa&ntilde;ol &middot; (817) 962-0182</p>
+        </div>
+
+        {/* TRUST STRIP */}
+        <div className="mt-8 flex items-center justify-center gap-2 text-[0.88rem] text-text-muted font-semibold flex-wrap">
+          <span className="text-accent">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.9 <span>&middot;</span> 370+ Reviews <span>&middot;</span> 3 Doctors <span>&middot;</span> Saturday Hours Available
+        </div>
+
+        {/* PREFER TO CALL */}
+        <div className="mt-10 text-center p-8 bg-linen rounded-[18px]">
+          <p className="text-[1rem] font-bold mb-2">Prefer to call?</p>
+          <p className="text-[2rem] font-black text-primary mb-2"><a href="tel:8179620182" className="text-primary">(817) 962-0182</a></p>
+          <p className="text-[0.85rem] text-text-muted">Our team is ready to help &middot; Se Habla Espa&ntilde;ol</p>
+        </div>
+      </div></section></ScrollReveal>
+    </>
+  );
+}
