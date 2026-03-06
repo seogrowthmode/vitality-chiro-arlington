@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import ScrollReveal from "@/components/ScrollReveal";
 import PageHero from "@/components/PageHero";
 import ConversionCTA from "@/components/ConversionCTA";
+import AppointmentForm from "@/components/AppointmentForm";
 
 export const metadata: Metadata = {
   title: "Contact Us",
@@ -18,15 +19,7 @@ export default function ContactPage() {
           <div>
             <h2 className="font-black text-2xl mb-5">Send Us a Message</h2>
             <div className="bg-white rounded-[18px] shadow-[var(--shadow-card-lg)] border-t-4 border-primary overflow-hidden p-7">
-              <form className="space-y-3.5">
-                <div><label className="block text-[0.78rem] font-bold mb-1">First Name</label><input type="text" placeholder="First Name" className="w-full px-3.5 py-3 border-[1.5px] border-border rounded-[10px] text-[0.9rem] bg-linen focus:border-primary focus:bg-white outline-none transition-colors" /></div>
-                <div><label className="block text-[0.78rem] font-bold mb-1">Last Name</label><input type="text" placeholder="Last Name" className="w-full px-3.5 py-3 border-[1.5px] border-border rounded-[10px] text-[0.9rem] bg-linen focus:border-primary focus:bg-white outline-none transition-colors" /></div>
-                <div><label className="block text-[0.78rem] font-bold mb-1">Phone</label><input type="tel" placeholder="(817) 555-0123" className="w-full px-3.5 py-3 border-[1.5px] border-border rounded-[10px] text-[0.9rem] bg-linen focus:border-primary focus:bg-white outline-none transition-colors" /></div>
-                <div><label className="block text-[0.78rem] font-bold mb-1">Email</label><input type="email" placeholder="you@email.com" className="w-full px-3.5 py-3 border-[1.5px] border-border rounded-[10px] text-[0.9rem] bg-linen focus:border-primary focus:bg-white outline-none transition-colors" /></div>
-                <div><label className="block text-[0.78rem] font-bold mb-1">How Can We Help?</label><textarea rows={4} placeholder="Tell us about your concerns..." className="w-full px-3.5 py-3 border-[1.5px] border-border rounded-[10px] text-[0.9rem] bg-linen focus:border-primary focus:bg-white outline-none transition-colors resize-y" /></div>
-                <button type="submit" className="w-full py-3.5 bg-primary text-white rounded-[16px] font-bold hover:bg-primary-dark transition-colors cursor-pointer">Send Message &rarr;</button>
-              </form>
-              <p className="text-center text-[0.75rem] text-text-muted mt-3">Se Habla Espa&ntilde;ol</p>
+              <AppointmentForm pageSource="contact" variant="contact" />
             </div>
           </div>
           <div>

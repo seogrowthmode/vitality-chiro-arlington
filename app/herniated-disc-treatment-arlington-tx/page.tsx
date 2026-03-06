@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import PageHero from "@/components/PageHero";
@@ -80,8 +81,8 @@ export default function HerniatedDiscPage() {
                   </p>
                 </div>
               </div>
-              <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)] bg-gradient-to-br from-soft-teal to-linen min-h-[400px] flex items-center justify-center text-text-muted text-center p-6">
-                Spinal disc illustration — normal disc vs. herniated disc
+              <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)] relative min-h-[400px]">
+                <Image src="/images/services/advanced-spinal-correction-clinic-treatment-2.webp" alt="Non-surgical herniated disc treatment — corrective chiropractic care at Vitality Family Chiropractic in Arlington, TX" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 42vw" />
               </div>
             </div>
           </div>

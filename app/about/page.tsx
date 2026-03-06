@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import PageHero from "@/components/PageHero";
@@ -27,7 +28,9 @@ export default function AboutPage() {
               <p>Today, with Dr. Mary Davis and Dr. Chad London, the practice has grown into one of the largest family chiropractic centers in Texas.</p>
             </div>
           </div>
-          <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)] bg-linen min-h-[360px] flex items-center justify-center text-[0.85rem] text-text-muted text-center p-6">Editorial team photo &mdash; all three doctors together, bright clinic, natural light</div>
+          <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)] relative min-h-[360px]">
+            <Image src="/images/office/clinic-interior-clinic.webp" alt="Vitality Family Chiropractic clinic interior — bright, welcoming treatment space in Arlington, TX" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 42vw" />
+          </div>
         </div>
       </div></section></ScrollReveal>
 

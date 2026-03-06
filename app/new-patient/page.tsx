@@ -4,6 +4,7 @@ import ScrollReveal from "@/components/ScrollReveal";
 import PageHero from "@/components/PageHero";
 import ConversionCTA from "@/components/ConversionCTA";
 import FAQAccordion from "@/components/FAQAccordion";
+import AppointmentForm from "@/components/AppointmentForm";
 import { CheckIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
@@ -58,14 +59,7 @@ export default function NewPatientPage() {
           </div>
           <div className="bg-white rounded-[18px] shadow-[var(--shadow-card-lg)] border-t-4 border-accent overflow-hidden p-7">
             <div className="text-[1.2rem] font-black mb-5 text-center"><span className="text-accent">$149</span> New Patient Exam</div>
-            <form className="space-y-3.5">
-              <input type="text" placeholder="First Name" className="w-full px-3.5 py-3 border-[1.5px] border-border rounded-[10px] text-[0.9rem] bg-linen focus:border-primary focus:bg-white outline-none transition-colors" />
-              <input type="text" placeholder="Last Name" className="w-full px-3.5 py-3 border-[1.5px] border-border rounded-[10px] text-[0.9rem] bg-linen focus:border-primary focus:bg-white outline-none transition-colors" />
-              <input type="tel" placeholder="Phone" className="w-full px-3.5 py-3 border-[1.5px] border-border rounded-[10px] text-[0.9rem] bg-linen focus:border-primary focus:bg-white outline-none transition-colors" />
-              <input type="email" placeholder="Email" className="w-full px-3.5 py-3 border-[1.5px] border-border rounded-[10px] text-[0.9rem] bg-linen focus:border-primary focus:bg-white outline-none transition-colors" />
-              <button type="submit" className="w-full py-3.5 bg-primary text-white rounded-[16px] font-bold hover:bg-primary-dark transition-colors cursor-pointer">Book Now &rarr;</button>
-            </form>
-            <p className="text-center text-[0.75rem] text-text-muted mt-3">Se Habla Espa&ntilde;ol &middot; (817) 962-0182</p>
+            <AppointmentForm pageSource="new-patient" variant="compact" buttonLabel="Book Now →" />
           </div>
         </div>
       </div></section></ScrollReveal>
@@ -82,7 +76,7 @@ export default function NewPatientPage() {
             <span className="eyebrow text-neutral">PATIENT FORMS</span>
             <h2 className="mb-5"><span className="font-normal text-[clamp(24px,2.5vw,36px)]">Save time </span><span className="font-black text-[clamp(30px,3.5vw,48px)]">at check-in.</span></h2>
             <p className="text-text-muted mb-5">Download and complete your new patient intake forms before your visit. Saves approximately 15 minutes.</p>
-            <a href="#" className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-[16px] font-bold text-[0.85rem] hover:bg-primary-dark transition-all">Download Intake Forms &rarr;</a>
+            <a href="/schedule" className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-[16px] font-bold text-[0.85rem] hover:bg-primary-dark transition-all">Schedule &amp; Get Forms &rarr;</a>
           </div>
         </div>
       </div></section></ScrollReveal>

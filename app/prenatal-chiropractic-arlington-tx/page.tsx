@@ -33,7 +33,9 @@ export default function PrenatalPage() {
               <p className="text-sage font-semibold">Both of our prenatal specialists are Webster Technique certified by the ICPA.</p>
             </div>
           </div>
-          <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)] bg-gradient-to-br from-[#EDF5E0] to-[#F5F9ED] min-h-[400px] flex items-center justify-center text-text-muted text-center p-6">Webster Technique adjustment on pregnant patient. Gentle hands on lower back/sacrum. Patient on pregnancy pillow.</div>
+          <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)] relative min-h-[400px]">
+            <Image src="/images/services/prenatal-chiropractic-care-clinic-treatment-3.webp" alt="Webster Technique prenatal chiropractic adjustment — gentle sacral correction for expecting mothers" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 42vw" />
+          </div>
         </div>
       </div></section></ScrollReveal>
 

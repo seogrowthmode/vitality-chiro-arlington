@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import PageHero from "@/components/PageHero";
@@ -34,14 +35,18 @@ export default function BackPainPage() {
               <p>At Vitality, we don&apos;t just adjust and send you home. We take X-rays, run sEMG nerve scans, and build a corrective care plan that changes the structure of your spine over time. That&apos;s the difference between temporary relief and lasting correction.</p>
             </div>
           </div>
-          <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)] bg-gradient-to-br from-linen to-[#F5EDE7] min-h-[380px] flex items-center justify-center text-text-muted text-center p-6">Person holding lower back, transitioning to receiving chiropractic adjustment and smiling. Before/after feel.</div>
+          <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)] relative min-h-[380px]">
+            <Image src="/images/services/advanced-spinal-correction-clinic-treatment-2.webp" alt="Chiropractic care for back pain relief at Vitality Family Chiropractic in Arlington, TX" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 42vw" />
+          </div>
         </div>
       </div></section></ScrollReveal>
 
       {/* OUR APPROACH */}
       <ScrollReveal><section className="py-20 bg-linen"><div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-20">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-14 items-center">
-          <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)] bg-gradient-to-br from-soft-teal to-linen min-h-[380px] flex items-center justify-center text-text-muted text-center p-6">Doctor performing spinal adjustment on patient. Clinical, professional, warm lighting.</div>
+          <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)] relative min-h-[380px]">
+            <Image src="/images/services/chiropractic-adjustments-clinic-treatment-1.webp" alt="Doctor performing corrective spinal adjustment on a patient at Vitality Family Chiropractic" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 42vw" />
+          </div>
           <div>
             <span className="eyebrow text-primary">OUR APPROACH</span>
             <h2 className="mb-5"><span className="block text-[clamp(24px,2.5vw,36px)] font-normal">We correct.</span><span className="block text-[clamp(30px,3.5vw,48px)] font-black">Not just adjust.</span></h2>
@@ -60,14 +65,14 @@ export default function BackPainPage() {
         <h2 className="mb-9"><span className="font-normal text-[clamp(28px,3vw,40px)]">How we treat </span><span className="font-black text-[clamp(36px,4vw,52px)]">back pain.</span></h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            { title: "Chiropractic Adjustments", desc: "Precise spinal corrections to restore proper alignment and reduce nerve interference causing your pain.", color: "border-primary" },
-            { title: "Advanced Spinal Correction", desc: "Long-term corrective care plans that change spinal structure — verified with follow-up X-rays.", color: "border-primary" },
-            { title: "Corrective Exercises", desc: "Targeted rehab and strengthening exercises to support your adjustments between visits.", color: "border-accent" },
+            { title: "Chiropractic Adjustments", desc: "Precise spinal corrections to restore proper alignment and reduce nerve interference causing your pain.", color: "border-primary", link: "/chiropractic-adjustments-arlington-tx" },
+            { title: "Advanced Spinal Correction", desc: "Long-term corrective care plans that change spinal structure — verified with follow-up X-rays.", color: "border-primary", link: "/advanced-spinal-correction-arlington-tx" },
+            { title: "Corrective Exercises", desc: "Targeted rehab and strengthening exercises to support your adjustments between visits.", color: "border-accent", link: "/schedule" },
           ].map((t) => (
             <div key={t.title} className={`bg-white rounded-[18px] p-8 shadow-[var(--shadow-card)] border-t-4 ${t.color} hover:-translate-y-1 transition-transform`}>
               <h4 className="text-[0.95rem] font-extrabold mb-2">{t.title}</h4>
               <p className="text-[0.85rem] text-text-muted leading-relaxed">{t.desc}</p>
-              <a href="#" className="text-primary font-bold text-[0.85rem] mt-3 inline-block">Learn More &rarr;</a>
+              <Link href={t.link} className="text-primary font-bold text-[0.85rem] mt-3 inline-block">Learn More &rarr;</Link>
             </div>
           ))}
         </div>
@@ -126,14 +131,14 @@ export default function BackPainPage() {
         <h2 className="mb-9"><span className="font-normal text-[clamp(24px,2.5vw,36px)]">We also </span><span className="font-black text-[clamp(30px,3.5vw,44px)]">treat.</span></h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            { title: "Neck Pain", desc: "Cervical misalignment causing pain, stiffness, and headaches." },
-            { title: "Sciatica", desc: "Nerve compression causing radiating pain from the low back through the legs." },
-            { title: "Headaches & Migraines", desc: "Often caused by upper cervical misalignment and nerve interference." },
+            { title: "Neck Pain", desc: "Cervical misalignment causing pain, stiffness, and headaches.", link: "/neck-pain-treatment-arlington-tx" },
+            { title: "Sciatica", desc: "Nerve compression causing radiating pain from the low back through the legs.", link: "/sciatica-treatment-arlington-tx" },
+            { title: "Headaches & Migraines", desc: "Often caused by upper cervical misalignment and nerve interference.", link: "/headache-migraine-relief-arlington-tx" },
           ].map((c) => (
             <div key={c.title} className="bg-white rounded-[18px] p-8 shadow-[var(--shadow-card)] border-t-4 border-primary hover:-translate-y-1 transition-transform">
               <h4 className="text-[0.95rem] font-extrabold mb-2">{c.title}</h4>
               <p className="text-[0.85rem] text-text-muted leading-relaxed">{c.desc}</p>
-              <a href="#" className="text-primary font-bold text-[0.85rem] mt-3 inline-block">Learn More &rarr;</a>
+              <Link href={c.link} className="text-primary font-bold text-[0.85rem] mt-3 inline-block">Learn More &rarr;</Link>
             </div>
           ))}
         </div>

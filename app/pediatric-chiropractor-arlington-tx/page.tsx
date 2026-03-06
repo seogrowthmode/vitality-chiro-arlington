@@ -41,7 +41,9 @@ export default function PediatricPage() {
               <p>At Vitality, Dr. Elise has adjusted infants as young as 2 days old. Our youngest patients are often our happiest.</p>
             </div>
           </div>
-          <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)] bg-gradient-to-br from-soft-teal to-[#F0FAF9] min-h-[400px] flex items-center justify-center text-text-muted text-center p-6">Doctor gently adjusting happy toddler. Parent watching with relaxed smile. Child comfortable, engaged.</div>
+          <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)] relative min-h-[400px]">
+            <Image src="/images/services/prenatal-chiropractic-care-clinic-treatment-3.webp" alt="Gentle pediatric chiropractic care at Vitality Family Chiropractic — safe adjustments for infants and children in Arlington, TX" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 42vw" />
+          </div>
         </div>
       </div></section></ScrollReveal>
 

@@ -66,9 +66,7 @@ export default function TestimonialsPage() {
         <h2 className="mb-5"><span className="font-normal text-[clamp(28px,3vw,40px)]">Love your </span><span className="font-black text-[clamp(36px,4vw,52px)]">experience?</span></h2>
         <p className="text-text-muted mb-7">Your review helps other Arlington families find better health. Leave us a review on your preferred platform.</p>
         <div className="flex justify-center gap-4 flex-wrap">
-          <a href="#" className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-[16px] font-bold text-[0.85rem] hover:bg-primary-dark transition-all">Google Review &rarr;</a>
-          <a href="#" className="inline-flex items-center gap-2 px-6 py-3 border-2 border-text/20 text-text rounded-[16px] font-bold text-[0.85rem] hover:border-primary hover:text-primary transition-all">Yelp &rarr;</a>
-          <a href="#" className="inline-flex items-center gap-2 px-6 py-3 border-2 border-text/20 text-text rounded-[16px] font-bold text-[0.85rem] hover:border-primary hover:text-primary transition-all">Facebook &rarr;</a>
+          <a href="https://maps.google.com/maps?cid=12164390195920911877" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white rounded-[16px] font-bold text-[0.85rem] hover:bg-primary-dark transition-all">Leave a Google Review &rarr;</a>
         </div>
       </div></section></ScrollReveal>
 

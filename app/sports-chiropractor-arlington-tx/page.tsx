@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import PageHero from "@/components/PageHero";
@@ -90,8 +91,8 @@ export default function SportsChiropractorPage() {
                   </p>
                 </div>
               </div>
-              <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)] bg-gradient-to-br from-linen to-[#FDF0E8] min-h-[400px] flex items-center justify-center text-text-muted text-center p-6">
-                Dr. Chad London — Sports Chiropractor, former Dallas Jackals rugby player
+              <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)] relative min-h-[400px]">
+                <Image src="/images/services/chiropractic-adjustments-clinic-treatment-1.webp" alt="Sports chiropractic treatment at Vitality Family Chiropractic — Dr. Chad London, CCSP-certified sports chiropractor in Arlington, TX" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 42vw" />
               </div>
             </div>
           </div>

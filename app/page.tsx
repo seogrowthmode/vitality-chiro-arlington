@@ -115,14 +115,16 @@ export default function HomePage() {
           ))}
           <p className="text-[0.85rem] text-primary font-semibold mt-2">Se Habla Espa&ntilde;ol</p>
         </div>
-        <div className="rounded-[18px] overflow-hidden bg-white shadow-[var(--shadow-card)] min-h-[400px] flex items-center justify-center bg-gradient-to-br from-soft-teal to-[#F0FAF9] text-[0.85rem] text-text-muted text-center p-5">
-          Pregnant woman receiving gentle chiropractic adjustment
+        <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)] relative min-h-[400px]">
+          <Image src="/images/services/prenatal-chiropractic-care-clinic-treatment-3.webp" alt="Prenatal chiropractic care — Webster Technique adjustment for expecting mothers" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 45vw" />
         </div>
       </div></section></ScrollReveal>
 
       {/* SPORTS */}
       <ScrollReveal><section className="py-20 bg-white"><div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-20 grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-14 items-center">
-        <div className="rounded-[18px] overflow-hidden bg-linen min-h-[360px] flex items-center justify-center text-[0.85rem] text-text-muted text-center p-5 order-last lg:order-first">Athletic sports chiropractic setting</div>
+        <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)] relative min-h-[360px] order-last lg:order-first">
+          <Image src="/images/services/chiropractic-adjustments-clinic-treatment-1.webp" alt="Sports chiropractic treatment — Dr. Chad London working with an athlete" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 45vw" />
+        </div>
         <div>
           <span className="eyebrow text-accent">FOR ATHLETES</span>
           <h2 className="mb-5"><span className="block text-[clamp(28px,3vw,40px)] font-normal">Train harder.</span><span className="block text-[clamp(36px,4vw,56px)] font-black text-accent">Recover faster.</span></h2>

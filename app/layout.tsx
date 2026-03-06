@@ -42,9 +42,9 @@ export const metadata: Metadata = {
     description:
       "Three doctors. Bilingual staff. All ages welcome. $149 new patient exam includes consultation, X-rays, nerve scan, and first adjustment.",
   },
-  verification: {
-    google: "GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE",
-  },
+  // verification: {
+  //   google: "GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE",
+  // },
 };
 
 export default function RootLayout({
