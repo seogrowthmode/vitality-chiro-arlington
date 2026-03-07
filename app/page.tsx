@@ -58,7 +58,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="relative z-[1] flex justify-center lg:justify-end">
-            <Image src="https://vitalitychiroarlington.com/wp-content/uploads/2025/08/Elise-Hernandez-Female-Chiropractor.jpg" alt="Dr. Elise Hernandez — Founder of Vitality Family Chiropractic" width={560} height={700} className="w-full max-w-[560px] h-auto object-cover rounded-[18px]" priority />
+            <Image src="/images/staff/dr-elise-hernandez.jpg" alt="Dr. Elise Hernandez — Founder of Vitality Family Chiropractic" width={560} height={700} className="w-full max-w-[560px] h-auto object-cover object-top rounded-[18px]" priority />
           </div>
         </div>
       </section>
@@ -86,13 +86,13 @@ export default function HomePage() {
         <div className="text-center mb-14"><span className="eyebrow text-primary">THREE DOCTORS. THREE SPECIALTIES.</span><h2><span className="block text-[clamp(28px,3vw,44px)] font-normal">One team.</span><span className="block text-[clamp(36px,4vw,56px)] font-black">Complete care.</span></h2></div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[1000px] mx-auto">
           {[
-            { name: "Dr. Elise Hernandez, D.C.", creds: "Founder · Prenatal & Pediatric Specialist\nUF → Life University · WNBA Dallas Wings", color: "border-primary", linkColor: "text-primary", img: "https://vitalitychiroarlington.com/wp-content/uploads/2025/08/Elise-Hernandez-Female-Chiropractor.jpg" },
-            { name: "Dr. Mary Davis, D.C.", creds: "Prenatal Specialist · Pregnancy Educator\nTexas Chiropractic College", color: "border-sage", linkColor: "text-sage", img: "https://vitalitychiroarlington.com/wp-content/uploads/2025/08/Dr-Mary.jpg" },
-            { name: "Dr. Chad London, D.C., CCSP", creds: "Sports & Performance Specialist\nPalmer College · Former Dallas Jackals", color: "border-accent", linkColor: "text-accent", img: "" },
+            { name: "Dr. Elise Hernandez, D.C.", creds: "Founder · Prenatal & Pediatric Specialist\nUF → Life University · WNBA Dallas Wings", color: "border-primary", linkColor: "text-primary", img: "/images/staff/dr-elise-hernandez.jpg" },
+            { name: "Dr. Mary Davis, D.C.", creds: "Prenatal Specialist · Pregnancy Educator\nTexas Chiropractic College", color: "border-sage", linkColor: "text-sage", img: "/images/staff/dr-mary-davis.jpg" },
+            { name: "Dr. Chad London, D.C., CCSP", creds: "Sports & Performance Specialist\nPalmer College · Former Dallas Jackals", color: "border-accent", linkColor: "text-accent", img: "/images/staff/dr-chad-london.jpg" },
           ].map((doc, i) => (
             <div key={i} className={`bg-white rounded-[18px] shadow-[var(--shadow-card-lg)] overflow-hidden border-t-[5px] ${doc.color} hover:-translate-y-3 transition-all duration-500`}>
               <div className="h-[260px] bg-linen overflow-hidden">
-                {doc.img ? <Image src={doc.img} alt={doc.name} width={360} height={260} className="w-full h-full object-cover object-top" /> : <div className="w-full h-full flex items-center justify-center text-[0.8rem] text-text-muted text-center p-5">Sports &amp; Performance Specialist</div>}
+                <Image src={doc.img} alt={doc.name} width={360} height={260} className="w-full h-full object-cover object-top" />
               </div>
               <div className="p-5 pb-6">
                 <h3 className="text-[1.1rem] font-extrabold mb-1">{doc.name}</h3>

@@ -81,7 +81,7 @@ export default function PrenatalPage() {
         <h2 className="mb-9"><span className="font-normal text-[clamp(28px,3vw,40px)]">Meet your </span><span className="font-black text-[clamp(36px,4vw,52px)]">specialists.</span></h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="bg-white rounded-[18px] overflow-hidden shadow-[var(--shadow-card)] border-t-4 border-primary">
-            <div className="h-[320px] overflow-hidden"><Image src="https://vitalitychiroarlington.com/wp-content/uploads/2025/08/Elise-Hernandez-Female-Chiropractor.jpg" alt="Dr. Elise Hernandez" width={600} height={320} className="w-full h-full object-cover" /></div>
+            <div className="h-[320px] overflow-hidden"><Image src="/images/staff/dr-elise-hernandez.jpg" alt="Dr. Elise Hernandez" width={600} height={320} className="w-full h-full object-cover object-top" /></div>
             <div className="p-6">
               <div className="text-[1.1rem] font-extrabold mb-1">Dr. Elise Hernandez, D.C.</div>
               <div className="text-[0.8rem] font-bold uppercase tracking-[0.1em] mb-2 text-primary">FOUNDER &middot; PRENATAL &amp; PEDIATRIC SPECIALIST</div>
@@ -90,7 +90,7 @@ export default function PrenatalPage() {
             </div>
           </div>
           <div className="bg-white rounded-[18px] overflow-hidden shadow-[var(--shadow-card)] border-t-4 border-sage">
-            <div className="h-[320px] overflow-hidden"><Image src="https://vitalitychiroarlington.com/wp-content/uploads/2025/08/Dr-Mary.jpg" alt="Dr. Mary Davis" width={600} height={320} className="w-full h-full object-cover" /></div>
+            <div className="h-[320px] overflow-hidden"><Image src="/images/staff/dr-mary-davis.jpg" alt="Dr. Mary Davis" width={600} height={320} className="w-full h-full object-cover object-top" /></div>
             <div className="p-6">
               <div className="text-[1.1rem] font-extrabold mb-1">Dr. Mary Davis, D.C.</div>
               <div className="text-[0.8rem] font-bold uppercase tracking-[0.1em] mb-2 text-sage">PRENATAL SPECIALIST &middot; PREGNANCY EDUCATOR</div>

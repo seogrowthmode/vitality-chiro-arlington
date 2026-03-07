@@ -19,7 +19,7 @@ export default function TeamPage() {
       {/* DR. ELISE */}
       <ScrollReveal><section className="py-20 bg-white"><div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-20">
         <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-14 items-center">
-          <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)]"><Image src="https://vitalitychiroarlington.com/wp-content/uploads/2025/08/Elise-Hernandez-Female-Chiropractor.jpg" alt="Dr. Elise Hernandez" width={600} height={480} className="w-full min-h-[480px] object-cover" /></div>
+          <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)]"><Image src="/images/staff/dr-elise-hernandez.jpg" alt="Dr. Elise Hernandez" width={600} height={480} className="w-full object-cover object-top" /></div>
           <div className="border-l-4 border-primary pl-7">
             <span className="eyebrow text-primary">FOUNDER &amp; PRENATAL SPECIALIST</span>
             <h2 className="text-[1.8rem] font-black mb-4">Dr. Elise Hernandez, D.C.</h2>
@@ -51,14 +51,14 @@ export default function TeamPage() {
             </div>
             <div className="flex flex-wrap gap-2 mt-5">{["Texas Chiropractic College", "Prenatal Specialist", "Pregnancy Educator"].map((b) => <span key={b} className="px-4 py-1.5 rounded-full text-[0.75rem] font-bold border-[1.5px] border-sage text-sage">{b}</span>)}</div>
           </div>
-          <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)]"><Image src="https://vitalitychiroarlington.com/wp-content/uploads/2025/08/Dr-Mary.jpg" alt="Dr. Mary Davis" width={600} height={440} className="w-full min-h-[440px] object-cover" /></div>
+          <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)]"><Image src="/images/staff/dr-mary-davis.jpg" alt="Dr. Mary Davis" width={600} height={440} className="w-full object-cover object-top" /></div>
         </div>
       </div></section></ScrollReveal>
 
       {/* DR. CHAD */}
       <ScrollReveal><section className="py-20 bg-white"><div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-20">
         <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-14 items-center">
-          <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)] bg-gradient-to-br from-linen to-[#F5EDE7] min-h-[440px] flex items-center justify-center text-text-muted text-center p-5">Athletic male, South African heritage &mdash; Sports &amp; Performance Specialist</div>
+          <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)]"><Image src="/images/staff/dr-chad-london.jpg" alt="Dr. Chad London" width={600} height={480} className="w-full object-cover object-top" /></div>
           <div className="border-l-4 border-accent pl-7">
             <span className="eyebrow text-accent">SPORTS &amp; PERFORMANCE</span>
             <h2 className="text-[1.8rem] font-black mb-4">Dr. Chad London, D.C., CCSP</h2>
@@ -78,16 +78,23 @@ export default function TeamPage() {
         <h2 className="mb-10"><span className="font-normal text-[clamp(28px,3vw,40px)] text-linen">Meet our </span><span className="font-black text-[clamp(36px,4vw,52px)] text-primary">support staff.</span></h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {[
-            { name: "Katy Moore", role: "CLINIC DIRECTOR & METABOLIX SPECIALIST", roleColor: "text-sage", bio: "MaxLiving Nutrition certified since 2020. Personalized nutrition coaching using Genova Labs Metabolix testing." },
-            { name: "Beth Humphus", role: "PATIENT COORDINATOR", roleColor: "text-primary", bio: "Joined 2023. Beth keeps the practice running smoothly and makes every patient feel at home." },
-            { name: "Tiffany Bogan", role: "NEW PATIENT COORDINATOR", roleColor: "text-accent", bio: "20+ years of finance experience. Ensures every new patient has a seamless first experience." },
+            { name: "Katy Moore", role: "CLINIC DIRECTOR & METABOLIX SPECIALIST", roleColor: "text-sage", bio: "MaxLiving Nutrition certified since 2020. Personalized nutrition coaching using Genova Labs Metabolix testing.", img: "/images/staff/katy-moore.jpg" },
+            { name: "Beth Humphus", role: "PATIENT COORDINATOR", roleColor: "text-primary", bio: "Joined 2023. Beth keeps the practice running smoothly and makes every patient feel at home.", img: "/images/staff/beth-humphus.jpg" },
+            { name: "Tiffany Bogan", role: "NEW PATIENT COORDINATOR", roleColor: "text-accent", bio: "20+ years of finance experience. Ensures every new patient has a seamless first experience.", img: "/images/staff/tiffany-bogan.jpg" },
           ].map((s) => (
             <div key={s.name} className="bg-deep-teal-hi border border-primary/15 rounded-[18px] overflow-hidden">
-              <div className="h-[320px] bg-deep-teal-hi flex items-center justify-center text-text-muted text-center p-5">{s.name}</div>
+              <div className="rounded-[18px] overflow-hidden"><Image src={s.img} alt={s.name} width={400} height={320} className="w-full object-cover object-top" /></div>
               <div className="p-6"><div className="text-[1.1rem] font-extrabold text-linen mb-1">{s.name}</div><div className={`text-[0.8rem] font-bold uppercase tracking-[0.1em] mb-2 ${s.roleColor}`}>{s.role}</div><p className="text-[0.85rem] text-linen/70 leading-relaxed">{s.bio}</p></div>
             </div>
           ))}
         </div>
+      </div></section></ScrollReveal>
+
+      {/* TEAM GROUP PHOTO */}
+      <ScrollReveal><section className="py-20 bg-linen"><div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-20 text-center">
+        <span className="eyebrow text-primary">THE VITALITY FAMILY</span>
+        <h2 className="mb-8"><span className="font-normal text-[clamp(28px,3vw,40px)]">One team. </span><span className="font-black text-[clamp(36px,4vw,52px)]">One mission.</span></h2>
+        <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)]"><Image src="/images/team/team-mission-wall.jpg" alt="The Vitality Family Chiropractic team — doctors and staff in Arlington, TX" width={1200} height={600} className="w-full object-cover object-top" /></div>
       </div></section></ScrollReveal>
 
       {/* TESTIMONIALS */}

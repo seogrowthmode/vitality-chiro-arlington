@@ -91,8 +91,8 @@ export default function SportsChiropractorPage() {
                   </p>
                 </div>
               </div>
-              <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)] relative min-h-[400px]">
-                <Image src="/images/services/chiropractic-adjustments-clinic-treatment-1.webp" alt="Sports chiropractic treatment at Vitality Family Chiropractic — Dr. Chad London, CCSP-certified sports chiropractor in Arlington, TX" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 42vw" />
+              <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)]">
+                <Image src="/images/staff/dr-chad-london.jpg" alt="Dr. Chad London — CCSP-certified sports chiropractor in Arlington, TX" width={600} height={480} className="w-full object-cover object-top" />
               </div>
             </div>
           </div>

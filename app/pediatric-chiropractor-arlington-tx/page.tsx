@@ -84,7 +84,7 @@ export default function PediatricPage() {
       {/* YOUR DOCTOR */}
       <ScrollReveal><section className="py-20 bg-linen"><div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-20">
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-14 items-center">
-          <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)]"><Image src="https://vitalitychiroarlington.com/wp-content/uploads/2025/08/Elise-Hernandez-Female-Chiropractor.jpg" alt="Dr. Elise Hernandez — Pediatric Specialist" width={600} height={480} className="w-full min-h-[400px] object-cover" /></div>
+          <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)]"><Image src="/images/staff/dr-elise-hernandez.jpg" alt="Dr. Elise Hernandez — Pediatric Specialist" width={600} height={480} className="w-full object-cover object-top" /></div>
           <div className="border-l-4 border-primary pl-7">
             <span className="eyebrow text-primary">YOUR CHILD&apos;S DOCTOR</span>
             <h2 className="text-[1.6rem] font-black mb-4">Dr. Elise Hernandez, D.C.</h2>

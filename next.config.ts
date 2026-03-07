@@ -1,15 +1,5 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  images: {
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "vitalitychiroarlington.com",
-        pathname: "/wp-content/uploads/**",
-      },
-    ],
-  },
-};
+const nextConfig: NextConfig = {};
 
 export default nextConfig;

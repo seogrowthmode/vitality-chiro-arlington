@@ -34,6 +34,11 @@ export default function AboutPage() {
         </div>
       </div></section></ScrollReveal>
 
+      {/* TEAM GROUP PHOTO */}
+      <ScrollReveal><section className="py-16 bg-linen"><div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-20">
+        <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)]"><Image src="/images/team/team-mission-wall.jpg" alt="The Vitality Family Chiropractic team in Arlington, TX" width={1200} height={600} className="w-full object-cover object-top" /></div>
+      </div></section></ScrollReveal>
+
       {/* WHAT WE BELIEVE */}
       <ScrollReveal><section className="py-20 bg-deep-teal"><div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-20">
         <div className="text-center mb-12"><span className="eyebrow text-primary">WHAT WE BELIEVE</span><h2 className="text-linen"><span className="block text-linen/70 text-[clamp(24px,2.5vw,36px)] font-normal">The principles that</span><span className="block text-[clamp(30px,3.5vw,48px)] font-black">guide everything we do.</span></h2></div>
@@ -88,12 +93,12 @@ export default function AboutPage() {
         <div className="text-center mb-12"><span className="eyebrow text-primary">OUR DOCTORS</span><h2><span className="block text-[clamp(24px,2.5vw,36px)] font-normal">Meet the team behind</span><span className="block text-[clamp(30px,3.5vw,48px)] font-black">your family&apos;s health.</span></h2></div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-7">
           {[
-            { name: "Dr. Elise Hernandez, D.C.", role: "Founder & Lead Doctor", roleColor: "text-primary", bio: "Former WNBA Dallas Wings chiropractor. University of Florida and Life University graduate." },
-            { name: "Dr. Mary Davis, D.C.", role: "Associate Doctor", roleColor: "text-sage", bio: "Specializing in prenatal and pediatric chiropractic care." },
-            { name: "Dr. Chad London, D.C.", role: "Associate Doctor", roleColor: "text-accent", bio: "Sports and corrective care specialist. Former professional rugby player." },
+            { name: "Dr. Elise Hernandez, D.C.", role: "Founder & Lead Doctor", roleColor: "text-primary", bio: "Former WNBA Dallas Wings chiropractor. University of Florida and Life University graduate.", img: "/images/staff/dr-elise-hernandez.jpg" },
+            { name: "Dr. Mary Davis, D.C.", role: "Associate Doctor", roleColor: "text-sage", bio: "Specializing in prenatal and pediatric chiropractic care.", img: "/images/staff/dr-mary-davis.jpg" },
+            { name: "Dr. Chad London, D.C., CCSP", role: "Associate Doctor", roleColor: "text-accent", bio: "Sports and corrective care specialist. Former professional rugby player.", img: "/images/staff/dr-chad-london.jpg" },
           ].map((doc) => (
             <div key={doc.name} className="bg-white rounded-[18px] overflow-hidden shadow-[var(--shadow-card)] hover:-translate-y-1 transition-transform">
-              <div className="h-[320px] bg-linen flex items-center justify-center text-[0.8rem] text-text-muted text-center p-5">{doc.name}</div>
+              <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)]"><Image src={doc.img} alt={doc.name} width={400} height={320} className="w-full object-cover object-top" /></div>
               <div className="p-6"><h3 className="text-[1.1rem] font-extrabold mb-1">{doc.name}</h3><p className={`text-[0.8rem] font-bold uppercase tracking-[0.1em] mb-2 ${doc.roleColor}`}>{doc.role}</p><p className="text-[0.85rem] text-text-muted leading-relaxed">{doc.bio}</p></div>
             </div>
           ))}
