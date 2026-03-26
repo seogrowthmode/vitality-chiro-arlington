@@ -146,10 +146,10 @@ export default function HeadacheMigrainePage() {
                 <div className="bg-white rounded-[18px] p-9 shadow-[var(--shadow-card-lg)] text-center max-w-[340px]">
                   <p className="text-[1.1rem] font-bold mb-3">Sound familiar?</p>
                   <p className="text-[0.88rem] text-text-muted mb-5">
-                    Our $149 exam includes cervical X-rays, sEMG nerve scan, and your first adjustment. Find out what&apos;s triggering your headaches.
+                    Our $67 exam includes cervical X-rays, sEMG nerve scan, and your first adjustment. Find out what&apos;s triggering your headaches.
                   </p>
                   <Link href="/schedule" className="inline-flex items-center justify-center gap-2 w-full px-8 py-4 bg-primary text-white rounded-[16px] font-bold hover:bg-primary-dark transition-all">
-                    Book Your $149 Exam &rarr;
+                    Book Your $67 Exam &rarr;
                   </Link>
                   <p className="text-[0.75rem] text-text-muted mt-3">Se Habla Espa&ntilde;ol &middot; (817) 962-0182</p>
                 </div>
@@ -201,7 +201,7 @@ export default function HeadacheMigrainePage() {
         </section>
       </ScrollReveal>
 
-      <ConversionCTA headline="Headaches don't have to be your normal." subtext='Book your <span class="text-accent">$149</span> exam and discover the cause.' />
+      <ConversionCTA headline="Headaches don't have to be your normal." subtext='Book your <span class="text-accent">$67</span> exam and discover the cause.' />
     </>
   );
 }

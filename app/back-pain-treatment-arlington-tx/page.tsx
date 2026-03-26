@@ -10,12 +10,12 @@ import { CheckIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
   title: "Back Pain Treatment in Arlington TX",
-  description: "Back pain treatment in Arlington TX. Corrective chiropractic care that fixes the root cause. 3 doctors, $149 new patient exam. Se Habla Español.",
+  description: "Back pain treatment in Arlington TX. Corrective chiropractic care that fixes the root cause. 3 doctors, $67 new patient exam. Se Habla Español.",
 };
 
 const faqItems = [
   { question: "How quickly will I feel relief?", answer: "Many patients feel some relief after their first adjustment. However, corrective care is about lasting structural change, not just symptom relief. Your personalized care plan typically spans several weeks to months depending on the severity of your condition." },
-  { question: "Do I need X-rays for back pain?", answer: "We take X-rays as part of your $149 new patient exam to see the actual structure of your spine. This allows us to identify misalignments, degeneration, and other issues that are causing your pain — and to track measurable improvement over time." },
+  { question: "Do I need X-rays for back pain?", answer: "We take X-rays as part of your $67 new patient exam to see the actual structure of your spine. This allows us to identify misalignments, degeneration, and other issues that are causing your pain — and to track measurable improvement over time." },
   { question: "Is chiropractic better than pain medication?", answer: "Pain medication masks symptoms. Chiropractic care addresses the cause. We don't tell patients to stop their medications — we work alongside your healthcare team to reduce your dependence on pain relief by fixing the underlying structural problem." },
 ];
 
@@ -54,7 +54,7 @@ export default function BackPainPage() {
               <p>Most chiropractors adjust the area that hurts and call it a day. We take a different approach. Using digital X-rays and sEMG nerve scans, we identify the specific structural issues causing your pain &mdash; then build a corrective care plan to fix them.</p>
               <p>Our MaxLiving 5 Essentials approach means we also address nutrition, exercise, mindset, and toxin reduction alongside your chiropractic care. The result: lasting relief, not temporary fixes.</p>
             </div>
-            <Link href="/schedule" className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white rounded-[16px] font-bold mt-4 hover:bg-primary-dark transition-all">Book Your $149 Exam &rarr;</Link>
+            <Link href="/schedule" className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white rounded-[16px] font-bold mt-4 hover:bg-primary-dark transition-all">Book Your $67 Exam &rarr;</Link>
           </div>
         </div>
       </div></section></ScrollReveal>
@@ -100,8 +100,8 @@ export default function BackPainPage() {
           <div className="flex items-center justify-center">
             <div className="bg-white rounded-[18px] p-9 shadow-[var(--shadow-card-lg)] text-center max-w-[340px]">
               <p className="text-[1.1rem] font-bold mb-3">Sound familiar?</p>
-              <p className="text-[0.88rem] text-text-muted mb-5">Our $149 exam includes X-rays, nerve scan, and your first adjustment. Find out what&apos;s causing your pain.</p>
-              <Link href="/schedule" className="inline-flex items-center justify-center gap-2 w-full px-8 py-4 bg-primary text-white rounded-[16px] font-bold hover:bg-primary-dark transition-all">Book Your $149 Exam &rarr;</Link>
+              <p className="text-[0.88rem] text-text-muted mb-5">Our $67 exam includes X-rays, nerve scan, and your first adjustment. Find out what&apos;s causing your pain.</p>
+              <Link href="/schedule" className="inline-flex items-center justify-center gap-2 w-full px-8 py-4 bg-primary text-white rounded-[16px] font-bold hover:bg-primary-dark transition-all">Book Your $67 Exam &rarr;</Link>
               <p className="text-[0.75rem] text-text-muted mt-3">Se Habla Espa&ntilde;ol &middot; (817) 962-0182</p>
             </div>
           </div>
@@ -144,7 +144,7 @@ export default function BackPainPage() {
         </div>
       </div></section></ScrollReveal>
 
-      <ConversionCTA headline="Stop living with back pain." subtext='Book your <span class="text-accent">$149</span> exam and find out what&apos;s causing it.' />
+      <ConversionCTA headline="Stop living with back pain." subtext='Book your <span class="text-accent">$67</span> exam and find out what&apos;s causing it.' />
     </>
   );
 }

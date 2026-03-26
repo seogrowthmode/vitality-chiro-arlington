@@ -8,7 +8,7 @@ import ReviewCard from "@/components/ReviewCard";
 
 export const metadata: Metadata = {
   title: "Prenatal Chiropractic in Arlington TX",
-  description: "Webster-certified prenatal chiropractic in Arlington TX. Two specialists for safer pregnancies, less pain, easier deliveries. $149 exam. Se Habla Español.",
+  description: "Webster-certified prenatal chiropractic in Arlington TX. Two specialists for safer pregnancies, less pain, easier deliveries. $67 exam. Se Habla Español.",
 };
 
 export default function PrenatalPage() {
@@ -16,7 +16,7 @@ export default function PrenatalPage() {
     <>
       <PageHero variant="sage-soft" eyebrow="PRENATAL CHIROPRACTIC IN ARLINGTON" eyebrowColor="sage" titleSmall="The safest hands" titleLarge="for you and baby." titleLargeColor="sage" subtitle="Two Webster-certified doctors specializing in prenatal care. Safer pregnancies, less pain, easier deliveries. Se Habla Español.">
         <div className="mt-7 flex gap-3 flex-wrap">
-          <Link href="/schedule" className="inline-flex items-center gap-2 px-10 py-4 bg-sage text-white rounded-[16px] font-bold text-[1.05rem] hover:opacity-90 transition-all">Book Your $149 Prenatal Exam &rarr;</Link>
+          <Link href="/schedule" className="inline-flex items-center gap-2 px-10 py-4 bg-sage text-white rounded-[16px] font-bold text-[1.05rem] hover:opacity-90 transition-all">Book Your $67 Prenatal Exam &rarr;</Link>
           <a href="tel:8179620182" className="inline-flex items-center gap-2 px-10 py-4 border-2 border-white/40 text-white rounded-[16px] font-bold text-[1.05rem] hover:bg-white/10 transition-all">Call (817) 962-0182</a>
         </div>
       </PageHero>
@@ -112,12 +112,12 @@ export default function PrenatalPage() {
         </div>
       </div></section></ScrollReveal>
 
-      {/* $149 OFFER */}
+      {/* $67 OFFER */}
       <ScrollReveal><section className="py-20 bg-white"><div className="max-w-[640px] mx-auto px-5 text-center">
         <span className="eyebrow text-accent">PRENATAL SPECIAL</span>
-        <div className="mb-3"><span className="text-[clamp(56px,6vw,72px)] font-black text-accent leading-none">$149</span></div>
+        <div className="mb-3"><span className="text-[clamp(56px,6vw,72px)] font-black text-accent leading-none">$67</span></div>
         <p className="text-[1.1rem] text-neutral line-through mb-2">Normally $320</p>
-        <p className="text-[1.2rem] font-bold text-primary mb-5">Save $171 on your prenatal exam.</p>
+        <p className="text-[1.2rem] font-bold text-primary mb-5">Save $253 on your prenatal exam.</p>
         <p className="text-text-muted mb-7">Includes consultation, pregnancy-safe examination, digital X-rays (when appropriate), sEMG nerve scan, and your first Webster adjustment.</p>
         <Link href="/schedule" className="inline-flex items-center gap-2 px-10 py-4 bg-sage text-white rounded-[16px] font-bold text-[1.05rem] hover:opacity-90 transition-all">Book Your Prenatal Exam &rarr;</Link>
         <p className="text-[0.82rem] text-text-muted mt-4">Se Habla Espa&ntilde;ol &middot; (817) 962-0182 &middot; Same-Day Appointments</p>

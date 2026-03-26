@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     template: "%s | Vitality Family Chiropractic",
   },
   description:
-    "Dr. Elise Hernandez and 3 doctors deliver corrective chiropractic care for your whole family. Prenatal, pediatric, sports. $149 new patient exam. Se Habla Español.",
+    "Dr. Elise Hernandez and 3 doctors deliver corrective chiropractic care for your whole family. Prenatal, pediatric, sports. $67 new patient exam. Se Habla Español.",
   keywords: [
     "chiropractor arlington tx",
     "family chiropractor arlington",
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
     siteName: "Vitality Family Chiropractic",
     title: "Vitality Family Chiropractic — Arlington TX",
     description:
-      "Three doctors. Bilingual staff. All ages welcome. $149 new patient exam includes consultation, X-rays, nerve scan, and first adjustment.",
+      "Three doctors. Bilingual staff. All ages welcome. $67 new patient exam includes consultation, X-rays, nerve scan, and first adjustment.",
     type: "website",
     locale: "en_US",
   },
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Vitality Family Chiropractic — Arlington TX",
     description:
-      "Three doctors. Bilingual staff. All ages welcome. $149 new patient exam includes consultation, X-rays, nerve scan, and first adjustment.",
+      "Three doctors. Bilingual staff. All ages welcome. $67 new patient exam includes consultation, X-rays, nerve scan, and first adjustment.",
   },
   // verification: {
   //   google: "GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE",

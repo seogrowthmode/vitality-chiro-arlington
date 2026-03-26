@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { FacebookIcon, InstagramIcon, YouTubeIcon, CheckIcon } from "./Icons";
 
 const serviceLinks = [
@@ -26,7 +27,10 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div className="flex flex-col gap-3">
-            <p className="text-[1.1rem] font-black text-white">Vitality Family Chiropractic</p>
+            <div className="flex items-center gap-2">
+              <Image src="/images/logo.svg" alt="Vitality Family Chiropractic logo" width={28} height={28} className="w-7 h-7" />
+              <p className="text-[1.1rem] font-black text-white">Vitality Family Chiropractic</p>
+            </div>
             <span className="inline-flex items-center gap-1.5 text-[0.72rem] font-semibold text-primary border border-primary/30 rounded-full px-3 py-1 w-fit">
               <CheckIcon className="w-3.5 h-3.5" />
               MaxLiving Health Center

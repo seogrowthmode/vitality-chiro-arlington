@@ -5,7 +5,7 @@ export default function manifest(): MetadataRoute.Manifest {
     name: "Vitality Family Chiropractic — Arlington TX",
     short_name: "Vitality Chiro",
     description:
-      "Family chiropractor in Arlington TX. Prenatal, pediatric, sports chiropractic. 3 doctors. Se Habla Espanol. $149 new patient exam.",
+      "Family chiropractor in Arlington TX. Prenatal, pediatric, sports chiropractic. 3 doctors. Se Habla Espanol. $67 new patient exam.",
     start_url: "/",
     display: "standalone",
     background_color: "#FAF6F1",

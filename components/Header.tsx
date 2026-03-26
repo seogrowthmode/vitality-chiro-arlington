@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
-import { PhoneIcon, LogoIcon } from "./Icons";
+import { PhoneIcon } from "./Icons";
 
 const serviceLinks = [
   { href: "/chiropractic-adjustments-arlington-tx", label: "Chiropractic Adjustments" },
@@ -68,7 +69,7 @@ export default function Header() {
       <nav className="sticky top-0 z-[1000] bg-white/97 backdrop-blur-[12px] shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
         <div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-20 flex items-center justify-between h-[72px]">
           <Link href="/" className="font-black text-lg text-deep-teal flex items-center gap-2">
-            <LogoIcon className="w-8 h-8" />
+            <Image src="/images/logo.svg" alt="Vitality Family Chiropractic logo" width={32} height={32} className="w-8 h-8" priority />
             Vitality Family Chiropractic
           </Link>
 
@@ -160,7 +161,7 @@ export default function Header() {
               href="/schedule"
               className="hidden sm:inline-flex bg-primary text-white px-5 py-2.5 rounded-[16px] font-bold text-[0.85rem] hover:bg-primary-dark hover:-translate-y-px transition-all"
             >
-              Book Your <span className="font-black text-white ml-1">$149</span> Exam
+              Book Your <span className="font-black text-white ml-1">$67</span> Exam
             </Link>
 
             {/* Hamburger */}
@@ -235,7 +236,7 @@ export default function Header() {
               className="bg-primary text-white text-center py-3 rounded-[16px] font-bold mt-2"
               onClick={() => setMenuOpen(false)}
             >
-              Book Your $149 Exam
+              Book Your $67 Exam
             </Link>
           </div>
         )}

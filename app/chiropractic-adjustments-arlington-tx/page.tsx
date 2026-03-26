@@ -10,7 +10,7 @@ import { CheckIcon } from "@/components/Icons";
 export const metadata: Metadata = {
   title: "Chiropractic Adjustments Arlington TX",
   description:
-    "Chiropractic adjustments in Arlington TX at Vitality Family Chiropractic. Manual and instrument-assisted spinal adjustments by 3 experienced doctors. $149 new patient exam. Call (817) 962-0182.",
+    "Chiropractic adjustments in Arlington TX at Vitality Family Chiropractic. Manual and instrument-assisted spinal adjustments by 3 experienced doctors. $67 new patient exam. Call (817) 962-0182.",
 };
 
 const faqItems = [
@@ -27,7 +27,7 @@ const faqItems = [
   {
     question: "How many adjustments will I need?",
     answer:
-      "The number of adjustments depends on your specific condition, severity, and health goals. Some patients feel significant improvement in 2-3 visits. Corrective care plans typically span several weeks to months to achieve lasting structural change. Your doctor will review your X-rays and sEMG nerve scan results to recommend a personalized care plan during your $149 new patient exam.",
+      "The number of adjustments depends on your specific condition, severity, and health goals. Some patients feel significant improvement in 2-3 visits. Corrective care plans typically span several weeks to months to achieve lasting structural change. Your doctor will review your X-rays and sEMG nerve scan results to recommend a personalized care plan during your $67 new patient exam.",
   },
   {
     question: "Do chiropractic adjustments hurt?",
@@ -166,7 +166,7 @@ export default function ChiropracticAdjustmentsPage() {
                     href="/schedule"
                     className="inline-flex items-center justify-center gap-2 w-full px-8 py-4 bg-primary text-white rounded-[16px] font-bold hover:bg-primary-dark transition-all"
                   >
-                    Book Your $149 Exam &rarr;
+                    Book Your $67 Exam &rarr;
                   </Link>
                   <p className="text-[0.75rem] text-text-muted mt-3">Se Habla Espa&ntilde;ol &middot; (817) 962-0182</p>
                 </div>
@@ -218,7 +218,7 @@ export default function ChiropracticAdjustmentsPage() {
         </section>
       </ScrollReveal>
 
-      <ConversionCTA headline="Feel the difference a real adjustment makes." subtext='Book your <span class="text-accent">$149</span> exam with one of our three doctors.' />
+      <ConversionCTA headline="Feel the difference a real adjustment makes." subtext='Book your <span class="text-accent">$67</span> exam with one of our three doctors.' />
     </>
   );
 }

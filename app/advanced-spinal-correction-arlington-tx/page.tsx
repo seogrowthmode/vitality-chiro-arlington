@@ -27,7 +27,7 @@ const faqItems = [
   {
     question: "How long does spinal correction take?",
     answer:
-      "Corrective care plans typically span 3 to 12 months depending on the severity of your spinal misalignment, your age, and how long the problem has been present. Most patients begin seeing measurable improvement on X-rays within the first 90 days. Your doctor will outline a clear timeline during your $149 new patient exam after reviewing your X-rays and sEMG nerve scan.",
+      "Corrective care plans typically span 3 to 12 months depending on the severity of your spinal misalignment, your age, and how long the problem has been present. Most patients begin seeing measurable improvement on X-rays within the first 90 days. Your doctor will outline a clear timeline during your $67 new patient exam after reviewing your X-rays and sEMG nerve scan.",
   },
   {
     question: "Can chiropractic help with scoliosis?",
@@ -100,7 +100,7 @@ export default function SpinalCorrectionPage() {
             </h2>
             <div className="max-w-[640px] space-y-8">
               {[
-                { num: "01", title: "Comprehensive Assessment", desc: "Digital X-rays, sEMG nerve scan, posture analysis, and orthopedic testing identify the specific structural issues in your spine. This is all included in your $149 new patient exam." },
+                { num: "01", title: "Comprehensive Assessment", desc: "Digital X-rays, sEMG nerve scan, posture analysis, and orthopedic testing identify the specific structural issues in your spine. This is all included in your $67 new patient exam." },
                 { num: "02", title: "Personalized Correction Plan", desc: "Your doctor designs a care plan based on your X-ray findings — not a cookie-cutter protocol. The plan includes adjustment frequency, specific corrective exercises, and milestone checkpoints." },
                 { num: "03", title: "Active Correction Phase", desc: "Regular adjustments combined with at-home corrective exercises and lifestyle modifications. Your spine begins to adapt and reshape toward its natural alignment." },
                 { num: "04", title: "Progress Verification", desc: "Follow-up X-rays at key intervals verify measurable structural change. You can see the improvement with your own eyes — this is evidence-based correction." },
@@ -164,7 +164,7 @@ export default function SpinalCorrectionPage() {
         </section>
       </ScrollReveal>
 
-      <ConversionCTA headline="Correct the cause. Change your spine." subtext='Start with a <span class="text-accent">$149</span> exam including digital X-rays and sEMG nerve scan.' />
+      <ConversionCTA headline="Correct the cause. Change your spine." subtext='Start with a <span class="text-accent">$67</span> exam including digital X-rays and sEMG nerve scan.' />
     </>
   );
 }

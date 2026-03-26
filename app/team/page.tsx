@@ -108,7 +108,7 @@ export default function TeamPage() {
         </div>
       </div></section></ScrollReveal>
 
-      <ConversionCTA headline="Your team is ready." subtext='Book your <span class="text-accent">$149</span> new patient exam today.' />
+      <ConversionCTA headline="Your team is ready." subtext='Book your <span class="text-accent">$67</span> new patient exam today.' />
     </>
   );
 }

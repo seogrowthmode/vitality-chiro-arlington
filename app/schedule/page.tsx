@@ -5,7 +5,7 @@ import AppointmentForm from "@/components/AppointmentForm";
 
 export const metadata: Metadata = {
   title: "Schedule Appointment",
-  description: "Schedule your $149 new patient exam at Vitality Family Chiropractic in Arlington TX. 3 doctors. Same-day appointments. Se Habla Español.",
+  description: "Schedule your $67 new patient exam at Vitality Family Chiropractic in Arlington TX. 3 doctors. Same-day appointments. Se Habla Español.",
 };
 
 export default function SchedulePage() {
@@ -16,8 +16,8 @@ export default function SchedulePage() {
       {/* CENTERED FORM */}
       <ScrollReveal><section className="py-20 bg-white"><div className="max-w-[580px] mx-auto px-5">
         <div className="bg-white rounded-[18px] shadow-[var(--shadow-card-lg)] border-t-4 border-primary overflow-hidden p-7 sm:p-10">
-          <div className="text-[1.4rem] font-black text-center mb-2"><span className="text-accent">$149</span> New Patient Exam</div>
-          <p className="text-center text-[0.88rem] text-text-muted mb-6">Consultation + Exam + X-Rays + First Adjustment<br /><span className="text-primary font-bold">Save $171</span> &mdash; normally $320</p>
+          <div className="text-[1.4rem] font-black text-center mb-2"><span className="text-accent">$67</span> New Patient Exam</div>
+          <p className="text-center text-[0.88rem] text-text-muted mb-6">Consultation + Exam + X-Rays + First Adjustment<br /><span className="text-primary font-bold">Save $253</span> &mdash; normally $320</p>
           <AppointmentForm pageSource="schedule" variant="full" />
         </div>
 

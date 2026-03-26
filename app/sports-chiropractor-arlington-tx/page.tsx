@@ -37,7 +37,7 @@ const faqItems = [
   {
     question: "Do you work with youth athletes and high school sports teams?",
     answer:
-      "Absolutely. We work with athletes of all ages, from youth sports participants to high school varsity players to adult recreational athletes and professionals. Younger athletes benefit from chiropractic care for injury prevention, growth-related issues, and performance development. Our $149 new patient exam is a great starting point for any athlete.",
+      "Absolutely. We work with athletes of all ages, from youth sports participants to high school varsity players to adult recreational athletes and professionals. Younger athletes benefit from chiropractic care for injury prevention, growth-related issues, and performance development. Our $67 new patient exam is a great starting point for any athlete.",
   },
 ];
 
@@ -184,7 +184,7 @@ export default function SportsChiropractorPage() {
               ))}
             </div>
             <Link href="/schedule" className="inline-flex items-center gap-2 px-10 py-4 bg-accent text-white rounded-[16px] font-bold text-[1.05rem] hover:bg-accent-dark transition-all">
-              Book Your $149 Sports Exam &rarr;
+              Book Your $67 Sports Exam &rarr;
             </Link>
             <p className="text-[0.82rem] text-text-muted mt-4">(817) 962-0182 &middot; Same-Day Appointments Available</p>
           </div>
@@ -207,7 +207,7 @@ export default function SportsChiropractorPage() {
         </section>
       </ScrollReveal>
 
-      <ConversionCTA bgClass="bg-accent" headline="Train harder. Recover faster." subtext="Book your $149 sports chiropractic assessment with Dr. London." />
+      <ConversionCTA bgClass="bg-accent" headline="Train harder. Recover faster." subtext="Book your $67 sports chiropractic assessment with Dr. London." />
     </>
   );
 }

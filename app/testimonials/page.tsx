@@ -70,7 +70,7 @@ export default function TestimonialsPage() {
         </div>
       </div></section></ScrollReveal>
 
-      <ConversionCTA headline="Ready to join them?" subtext='Book your <span class="text-accent">$149</span> new patient exam.' />
+      <ConversionCTA headline="Ready to join them?" subtext='Book your <span class="text-accent">$67</span> new patient exam.' />
     </>
   );
 }

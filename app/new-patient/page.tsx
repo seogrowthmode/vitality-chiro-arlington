@@ -8,8 +8,8 @@ import AppointmentForm from "@/components/AppointmentForm";
 import { CheckIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: "New Patients — $149 Exam",
-  description: "New patient special: $149 comprehensive exam includes consultation, X-rays, nerve scan, and first adjustment. Save $171. Se Habla Español.",
+  title: "New Patients — $67 Exam",
+  description: "New patient special: $67 comprehensive exam includes consultation, X-rays, nerve scan, and first adjustment. Save $253. Se Habla Español.",
 };
 
 const faqItems = [
@@ -22,7 +22,7 @@ const faqItems = [
 export default function NewPatientPage() {
   return (
     <>
-      <PageHero variant="warm" breadcrumbs={[{ label: "Home", href: "/" }, { label: "New Patients" }]} eyebrow="NEW PATIENT SPECIAL" eyebrowColor="orange" titleSmall="Your $149 exam" titleLarge="includes everything." subtitle="Consultation, comprehensive exam, digital X-rays, sEMG nerve scan, and your first adjustment. Normally $320 — you save $171." />
+      <PageHero variant="warm" breadcrumbs={[{ label: "Home", href: "/" }, { label: "New Patients" }]} eyebrow="NEW PATIENT SPECIAL" eyebrowColor="orange" titleSmall="Your $67 exam" titleLarge="includes everything." subtitle="Consultation, comprehensive exam, digital X-rays, sEMG nerve scan, and your first adjustment. Normally $320 — you save $253." />
 
       {/* WHAT TO EXPECT */}
       <ScrollReveal><section className="py-20 bg-white"><div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-20">
@@ -43,22 +43,22 @@ export default function NewPatientPage() {
         </div>
       </div></section></ScrollReveal>
 
-      {/* $149 OFFER */}
+      {/* $67 OFFER */}
       <ScrollReveal><section className="py-20 bg-deep-teal"><div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-20">
         <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-14 items-center">
           <div>
-            <span className="eyebrow text-primary">SAVE $171</span>
-            <div className="mb-4"><span className="text-[clamp(56px,6vw,80px)] font-black text-accent leading-none">$149</span><span className="block text-[clamp(24px,2vw,32px)] font-normal text-neutral line-through mt-1">Normally $320</span></div>
-            <p className="text-[1.1rem] font-bold text-primary mb-5">You save $171 on your first visit.</p>
+            <span className="eyebrow text-primary">SAVE $253</span>
+            <div className="mb-4"><span className="text-[clamp(56px,6vw,80px)] font-black text-accent leading-none">$67</span><span className="block text-[clamp(24px,2vw,32px)] font-normal text-neutral line-through mt-1">Normally $320</span></div>
+            <p className="text-[1.1rem] font-bold text-primary mb-5">You save $253 on your first visit.</p>
             <ul className="space-y-3 mb-7">
               {["Comprehensive consultation", "Full spinal examination", "Digital spinal X-rays", "sEMG nerve scan", "Posture analysis", "Your first chiropractic adjustment"].map((item) => (
                 <li key={item} className="flex gap-2.5 items-center"><CheckIcon className="w-5 h-5 text-primary flex-shrink-0" /><span className="text-linen">{item}</span></li>
               ))}
             </ul>
-            <Link href="/schedule" className="inline-flex items-center gap-2 px-10 py-4 bg-accent text-white rounded-[16px] font-bold text-[1.05rem] hover:bg-accent-dark transition-all">Book Your $149 Exam &rarr;</Link>
+            <Link href="/schedule" className="inline-flex items-center gap-2 px-10 py-4 bg-accent text-white rounded-[16px] font-bold text-[1.05rem] hover:bg-accent-dark transition-all">Book Your $67 Exam &rarr;</Link>
           </div>
           <div className="bg-white rounded-[18px] shadow-[var(--shadow-card-lg)] border-t-4 border-accent overflow-hidden p-7">
-            <div className="text-[1.2rem] font-black mb-5 text-center"><span className="text-accent">$149</span> New Patient Exam</div>
+            <div className="text-[1.2rem] font-black mb-5 text-center"><span className="text-accent">$67</span> New Patient Exam</div>
             <AppointmentForm pageSource="new-patient" variant="compact" buttonLabel="Book Now →" />
           </div>
         </div>
@@ -97,7 +97,7 @@ export default function NewPatientPage() {
         <FAQAccordion items={faqItems} />
       </div></section></ScrollReveal>
 
-      <ConversionCTA headline="Ready to start?" subtext='Book your <span class="text-accent">$149</span> new patient exam today. Save $171.' />
+      <ConversionCTA headline="Ready to start?" subtext='Book your <span class="text-accent">$67</span> new patient exam today. Save $253.' />
     </>
   );
 }

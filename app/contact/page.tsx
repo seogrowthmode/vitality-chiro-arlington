@@ -38,11 +38,11 @@ export default function ContactPage() {
                 <h4 className="text-[0.72rem] font-bold tracking-[0.15em] uppercase text-primary mb-3">OFFICE HOURS</h4>
                 <div className="text-[0.88rem] leading-relaxed space-y-1">
                   {[
-                    ["Monday", "8:00am – 11:00am, 3:00pm – 6:30pm"],
-                    ["Tuesday", "2:30pm – 6:00pm"],
-                    ["Wednesday", "8:00am – 11:00am, 3:00pm – 6:30pm"],
-                    ["Thursday", "2:30pm – 6:00pm"],
-                    ["Friday", "Closed"],
+                    ["Monday", "7:30am – 10:30am, 3:00pm – 6:00pm"],
+                    ["Tuesday", "11:00am – 2:00pm"],
+                    ["Wednesday", "7:30am – 10:30am, 3:00pm – 6:00pm"],
+                    ["Thursday", "3:00pm – 6:00pm"],
+                    ["Friday", "7:00am – 10:00am"],
                     ["Saturday", "1st & 3rd: 8:00am – 9:30am"],
                     ["Sunday", "Closed"],
                   ].map(([day, hrs]) => (
@@ -52,14 +52,14 @@ export default function ContactPage() {
               </div>
               <div className="bg-deep-teal rounded-[16px] p-6 text-linen">
                 <h4 className="text-[0.72rem] font-bold tracking-[0.15em] uppercase text-primary mb-3">MAP</h4>
-                <div className="bg-primary/10 rounded-[10px] h-[200px] flex items-center justify-center text-[0.82rem] text-linen/50">Google Maps embed &mdash; 1106 W. Pioneer Pkwy, Arlington TX</div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3359.1!2d-97.1088!3d32.7157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864e62d0e97a762d%3A0xa8d098f9f91c3e05!2sVitality%20Family%20Chiropractic!5e0!3m2!1sen!2sus!4v1709744000000!5m2!1sen!2sus" width="100%" height="200" style={{ border: 0, borderRadius: "10px" }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="Vitality Family Chiropractic location map" />
               </div>
             </div>
           </div>
         </div>
       </div></section></ScrollReveal>
 
-      <ConversionCTA headline="Ready to book?" subtext='Schedule your <span class="text-accent">$149</span> new patient exam.' />
+      <ConversionCTA headline="Ready to book?" subtext='Schedule your <span class="text-accent">$67</span> new patient exam.' />
     </>
   );
 }

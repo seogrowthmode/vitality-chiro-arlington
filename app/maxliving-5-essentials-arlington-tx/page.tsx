@@ -187,7 +187,7 @@ export default function MaxLiving5EssentialsPage() {
             <Link href="/schedule" className="inline-flex items-center gap-2 px-10 py-4 bg-primary text-white rounded-[16px] font-bold text-[1.05rem] mt-8 hover:bg-primary-dark transition-all">
               Start Your 5 Essentials Journey &rarr;
             </Link>
-            <p className="text-[0.82rem] text-text-muted mt-4">$149 New Patient Exam &middot; (817) 962-0182 &middot; Se Habla Espa&ntilde;ol</p>
+            <p className="text-[0.82rem] text-text-muted mt-4">$67 New Patient Exam &middot; (817) 962-0182 &middot; Se Habla Espa&ntilde;ol</p>
           </div>
         </section>
       </ScrollReveal>
@@ -208,7 +208,7 @@ export default function MaxLiving5EssentialsPage() {
         </section>
       </ScrollReveal>
 
-      <ConversionCTA bgClass="bg-sage" headline="More than adjustments. A complete health transformation." subtext="Book your $149 exam and discover the MaxLiving difference." />
+      <ConversionCTA bgClass="bg-sage" headline="More than adjustments. A complete health transformation." subtext="Book your $67 exam and discover the MaxLiving difference." />
     </>
   );
 }

@@ -1,0 +1,36 @@
+{
+  "businessName": "Vitality Family Chiropractic",
+  "domain": "https://vitalitychiroarlington.com",
+  "phone": "(817) 962-0182",
+  "location": {
+    "street": "1106 W. Pioneer Parkway, Suite 300",
+    "city": "Arlington",
+    "state": "TX",
+    "postalCode": "76013",
+    "country": "US"
+  },
+  "entityType": [
+    "LocalBusiness",
+    "MedicalBusiness",
+    "Chiropractor"
+  ],
+  "primaryServices": [
+    "Chiropractic Adjustments",
+    "Advanced Spinal Correction",
+    "Prenatal Chiropractic Care",
+    "Pediatric Chiropractic",
+    "Sports Chiropractic",
+    "Family Wellness Care"
+  ],
+  "serviceArea": [
+    "Arlington",
+    "Texas"
+  ],
+  "recommendedQueries": [
+    "family chiropractor arlington tx",
+    "prenatal chiropractor arlington tx",
+    "pediatric chiropractor arlington tx",
+    "sports chiropractor arlington tx",
+    "maxliving chiropractor arlington tx"
+  ]
+}

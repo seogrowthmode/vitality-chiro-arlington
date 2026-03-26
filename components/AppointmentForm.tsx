@@ -3,7 +3,7 @@
 import { useState } from "react";
 
 interface AppointmentFormProps {
-  /** Which page the form is on — sent as a hidden field to Basin */
+  /** Which page the form is on -- sent as a hidden field */
   pageSource?: string;
   /** Variant controls which fields are shown */
   variant?: "full" | "compact" | "contact";
@@ -14,8 +14,6 @@ interface AppointmentFormProps {
 }
 
 type FormStatus = "idle" | "loading" | "success" | "error";
-
-const BASIN_ENDPOINT = "https://usebasin.com/f/BASIN_FORM_ID";
 
 const PREFERRED_DAYS = [
   "Monday",
@@ -46,13 +44,24 @@ export default function AppointmentForm({
     setStatus("loading");
 
     const form = e.currentTarget;
-    const data = Object.fromEntries(new FormData(form).entries());
+    const fd = new FormData(form);
+
+    const payload = {
+      firstName: fd.get("first_name") as string,
+      lastName: fd.get("last_name") as string,
+      email: fd.get("email") as string,
+      phone: fd.get("phone") as string,
+      preferred_day: fd.get("preferred_day") as string || "",
+      message: fd.get("message") as string || "",
+      concern: fd.get("message") as string || "",
+      page_source: fd.get("page_source") as string || pageSource,
+    };
 
     try {
-      const response = await fetch(BASIN_ENDPOINT, {
+      const response = await fetch("/api/lead", {
         method: "POST",
-        headers: { "Content-Type": "application/json", Accept: "application/json" },
-        body: JSON.stringify(data),
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
       });
 
       if (response.ok) {
@@ -99,11 +108,11 @@ export default function AppointmentForm({
       {/* Hidden page source */}
       <input type="hidden" name="page_source" value={pageSource} />
 
-      {/* --- $149 offer badge (full + compact variants) --- */}
+      {/* --- $67 offer badge (full + compact variants) --- */}
       {!isContact && (
         <div className="text-center mb-1">
           <span className="inline-block bg-accent/10 text-accent text-[0.78rem] font-black tracking-wide px-3 py-1 rounded-full">
-            $149 New Patient Exam &mdash; Save $171
+            $67 New Patient Exam &mdash; Save $253
           </span>
         </div>
       )}

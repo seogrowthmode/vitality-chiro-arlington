@@ -1,12 +1,29 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import ScrollReveal from "@/components/ScrollReveal";
 import FAQAccordion from "@/components/FAQAccordion";
 import ReviewCard from "@/components/ReviewCard";
+import AppointmentForm from "@/components/AppointmentForm";
 import { CheckIcon, SpineIcon } from "@/components/Icons";
 
+export const metadata: Metadata = {
+  title: "Family Chiropractor Arlington TX | Vitality Family Chiropractic",
+  description:
+    "Vitality Family Chiropractic helps Arlington families with prenatal chiropractic, pediatric chiropractic, corrective spinal care, sports chiropractic, and MaxLiving wellness support.",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Family Chiropractor Arlington TX | Vitality Family Chiropractic",
+    description:
+      "Prenatal chiropractic, pediatric chiropractic, corrective spinal care, sports chiropractic, and family wellness in Arlington, TX with Dr. Elise Hernandez and the Vitality team.",
+    url: "https://vitalitychiroarlington.com",
+  },
+};
+
 const faqItems = [
-  { question: "What's included in the $149 new patient exam?", answer: "Your $149 exam (normally $320) includes a comprehensive consultation, full spinal examination, digital X-rays, sEMG nerve scan, posture analysis, and your first chiropractic adjustment. You save $171 and leave with a clear picture of your spinal health." },
+  { question: "What's included in the $67 new patient exam?", answer: "Your $67 exam (normally $320) includes a comprehensive consultation, full spinal examination, digital X-rays, sEMG nerve scan, posture analysis, and your first chiropractic adjustment. You save $253 and leave with a clear picture of your spinal health." },
   { question: "Do you specialize in prenatal chiropractic?", answer: "Yes! Dr. Elise and Dr. Mary are both Webster Technique certified. We specialize in prenatal chiropractic care, helping moms-to-be stay comfortable, reduce back pain, and prepare for healthier deliveries." },
   { question: "Is chiropractic safe for my baby or child?", answer: "Absolutely. Pediatric adjustments use finger-tip pressure lighter than what you'd use to check a ripe tomato. Dr. Elise has adjusted infants as young as 2 days old." },
   { question: "What's the MaxLiving 5 Essentials approach?", answer: "MaxLiving's 5 Essentials are: Core Chiropractic, Nutrition, Exercise, Mindset, and Toxin Reduction. We address your whole health — not just your spine." },
@@ -164,26 +181,19 @@ export default function HomePage() {
         <div className="text-center mt-10 text-[0.9rem] text-linen opacity-80"><span className="text-accent font-bold">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.9 Google &middot; 370+ Reviews</div>
       </div></section></ScrollReveal>
 
-      {/* $149 OFFER */}
+      {/* $67 OFFER */}
       <ScrollReveal><section id="offer" className="py-24 bg-white"><div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-20 grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-14 items-center">
         <div>
           <span className="eyebrow text-accent">NEW PATIENT SPECIAL</span>
-          <h2 className="leading-none"><span className="block text-[clamp(56px,6vw,80px)] font-black text-accent">$149.</span><span className="block text-[clamp(24px,2.5vw,32px)] font-normal text-neutral line-through mt-1">Normally $320.</span></h2>
-          <div className="text-[1.2rem] font-bold text-primary my-4">You save $171.</div>
+          <h2 className="leading-none"><span className="block text-[clamp(56px,6vw,80px)] font-black text-accent">$67.</span><span className="block text-[clamp(24px,2.5vw,32px)] font-normal text-neutral line-through mt-1">Normally $320.</span></h2>
+          <div className="text-[1.2rem] font-bold text-primary my-4">You save $253.</div>
           <p className="text-[0.95rem] text-text-muted mb-2">Includes: Consultation &middot; Comprehensive Exam &middot; Spinal X-Rays &middot; First Adjustment</p>
           <p className="text-[0.88rem] text-text-muted mb-7">sEMG nerve scan included. Same-day appointments available.</p>
-          <Link href="/schedule" className="inline-flex items-center gap-2 px-10 py-4 bg-primary text-white rounded-[16px] font-bold text-[1.05rem] hover:bg-primary-dark transition-all">Book Your $149 Exam &rarr;</Link>
+          <Link href="/schedule" className="inline-flex items-center gap-2 px-10 py-4 bg-primary text-white rounded-[16px] font-bold text-[1.05rem] hover:bg-primary-dark transition-all">Book Your $67 Exam &rarr;</Link>
           <p className="text-[0.85rem] text-text-muted mt-4">Se Habla Espa&ntilde;ol &middot; (817) 962-0182</p>
         </div>
         <div className="bg-white rounded-[18px] shadow-[var(--shadow-card-lg)] border-t-4 border-accent overflow-hidden p-8">
-          <div className="text-[1.2rem] font-black mb-5 text-center"><span className="text-accent">$149</span> New Patient Exam</div>
-          <form className="space-y-3.5">
-            <input type="text" placeholder="First Name" className="w-full px-3.5 py-3 border-[1.5px] border-border rounded-[10px] text-[0.9rem] bg-linen focus:border-primary focus:bg-white outline-none transition-colors" />
-            <input type="text" placeholder="Last Name" className="w-full px-3.5 py-3 border-[1.5px] border-border rounded-[10px] text-[0.9rem] bg-linen focus:border-primary focus:bg-white outline-none transition-colors" />
-            <input type="tel" placeholder="Phone" className="w-full px-3.5 py-3 border-[1.5px] border-border rounded-[10px] text-[0.9rem] bg-linen focus:border-primary focus:bg-white outline-none transition-colors" />
-            <input type="email" placeholder="Email" className="w-full px-3.5 py-3 border-[1.5px] border-border rounded-[10px] text-[0.9rem] bg-linen focus:border-primary focus:bg-white outline-none transition-colors" />
-            <button type="submit" className="w-full py-3.5 bg-primary text-white rounded-[16px] font-bold text-[0.95rem] hover:bg-primary-dark transition-colors cursor-pointer">Book Now &rarr;</button>
-          </form>
+          <AppointmentForm pageSource="homepage-offer" variant="compact" buttonLabel="Book Now →" />
         </div>
       </div></section></ScrollReveal>
 
@@ -217,7 +227,7 @@ export default function HomePage() {
       <ScrollReveal><section className="py-24 bg-soft-teal text-center"><div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-20">
         <h2 className="mb-7"><span className="block text-[clamp(28px,3vw,44px)] font-normal">Your family&apos;s</span><span className="block text-[clamp(48px,5vw,72px)] font-black text-primary">vitality</span><span className="block text-[clamp(28px,3vw,44px)] font-normal">starts here.</span></h2>
         <div className="flex justify-center gap-4 mb-6 flex-wrap">
-          <Link href="/schedule" className="inline-flex items-center gap-2 px-10 py-4 bg-accent text-white rounded-[16px] font-bold text-[1.05rem] hover:bg-accent-dark transition-all">Book Your $149 Exam &rarr;</Link>
+          <Link href="/schedule" className="inline-flex items-center gap-2 px-10 py-4 bg-accent text-white rounded-[16px] font-bold text-[1.05rem] hover:bg-accent-dark transition-all">Book Your $67 Exam &rarr;</Link>
           <a href="tel:8179620182" className="inline-flex items-center gap-2 px-10 py-4 border-2 border-neutral text-neutral rounded-[16px] font-bold text-[1.05rem] hover:bg-neutral hover:text-white transition-all">Call (817) 962-0182</a>
         </div>
         <p className="text-[0.85rem] text-text-muted">Se Habla Espa&ntilde;ol <span className="mx-2 opacity-40">|</span> 3 Doctors <span className="mx-2 opacity-40">|</span> Open 1st &amp; 3rd Saturdays <span className="mx-2 opacity-40">|</span> All Ages Welcome</p>

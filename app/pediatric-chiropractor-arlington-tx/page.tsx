@@ -9,7 +9,7 @@ import FAQAccordion from "@/components/FAQAccordion";
 
 export const metadata: Metadata = {
   title: "Pediatric Chiropractic in Arlington TX",
-  description: "Gentle pediatric chiropractic for babies, toddlers, and kids in Arlington TX. Finger-pressure light adjustments. Colic, ear infections, development. $149 exam.",
+  description: "Gentle pediatric chiropractic for babies, toddlers, and kids in Arlington TX. Finger-pressure light adjustments. Colic, ear infections, development. $67 exam.",
 };
 
 const faqItems = [
@@ -24,7 +24,7 @@ export default function PediatricPage() {
     <>
       <PageHero variant="teal-soft" eyebrow="PEDIATRIC CHIROPRACTIC IN ARLINGTON" eyebrowColor="teal" titleSmall="Gentle care" titleLarge="from day one." subtitle="Finger-pressure light adjustments for newborns, babies, toddlers, and kids. Supporting healthy development naturally. Se Habla Español.">
         <div className="mt-7 flex gap-3 flex-wrap">
-          <Link href="/schedule" className="inline-flex items-center gap-2 px-10 py-4 bg-primary text-white rounded-[16px] font-bold text-[1.05rem] hover:bg-primary-dark transition-all">Book Your Child&apos;s $149 Exam &rarr;</Link>
+          <Link href="/schedule" className="inline-flex items-center gap-2 px-10 py-4 bg-primary text-white rounded-[16px] font-bold text-[1.05rem] hover:bg-primary-dark transition-all">Book Your Child&apos;s $67 Exam &rarr;</Link>
           <a href="tel:8179620182" className="inline-flex items-center gap-2 px-10 py-4 border-2 border-white/40 text-white rounded-[16px] font-bold text-[1.05rem] hover:bg-white/10 transition-all">Call (817) 962-0182</a>
         </div>
       </PageHero>
@@ -117,18 +117,18 @@ export default function PediatricPage() {
         <FAQAccordion items={faqItems} />
       </div></section></ScrollReveal>
 
-      {/* $149 CTA */}
+      {/* $67 CTA */}
       <ScrollReveal><section className="py-20 bg-soft-teal"><div className="max-w-[640px] mx-auto px-5 text-center">
         <span className="eyebrow text-accent">PEDIATRIC SPECIAL</span>
-        <div className="mb-3"><span className="text-[clamp(56px,6vw,72px)] font-black text-accent leading-none">$149</span></div>
+        <div className="mb-3"><span className="text-[clamp(56px,6vw,72px)] font-black text-accent leading-none">$67</span></div>
         <p className="text-[1.1rem] text-neutral line-through mb-2">Normally $320</p>
-        <p className="text-[1.2rem] font-bold text-primary mb-5">Save $171 on your child&apos;s first exam.</p>
+        <p className="text-[1.2rem] font-bold text-primary mb-5">Save $253 on your child&apos;s first exam.</p>
         <p className="text-text-muted mb-7">Includes age-appropriate consultation, gentle examination, and first adjustment. X-rays only when clinically necessary for children.</p>
         <Link href="/schedule" className="inline-flex items-center gap-2 px-10 py-4 bg-primary text-white rounded-[16px] font-bold text-[1.05rem] hover:bg-primary-dark transition-all">Book Your Child&apos;s Exam &rarr;</Link>
         <p className="text-[0.82rem] text-text-muted mt-4">Se Habla Espa&ntilde;ol &middot; (817) 962-0182 &middot; All Ages Welcome</p>
       </div></section></ScrollReveal>
 
-      <ConversionCTA headline="Give your child the best start." subtext='Book your child&apos;s <span class="text-accent">$149</span> exam today.' />
+      <ConversionCTA headline="Give your child the best start." subtext='Book your child&apos;s <span class="text-accent">$67</span> exam today.' />
     </>
   );
 }

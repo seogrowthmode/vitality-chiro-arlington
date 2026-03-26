@@ -32,7 +32,7 @@ const faqItems = [
   {
     question: "How long does it take to fix neck pain with chiropractic care?",
     answer:
-      "Many patients feel improvement after their first adjustment. However, lasting correction depends on the severity and duration of your condition. Acute neck pain may resolve in 2-4 weeks. Chronic cervical misalignment or degenerative changes may require 2-4 months of corrective care. Your doctor will outline a clear timeline after reviewing your $149 new patient exam results.",
+      "Many patients feel improvement after their first adjustment. However, lasting correction depends on the severity and duration of your condition. Acute neck pain may resolve in 2-4 weeks. Chronic cervical misalignment or degenerative changes may require 2-4 months of corrective care. Your doctor will outline a clear timeline after reviewing your $67 new patient exam results.",
   },
   {
     question: "What causes neck pain?",
@@ -118,10 +118,10 @@ export default function NeckPainPage() {
                 <div className="bg-white rounded-[18px] p-9 shadow-[var(--shadow-card-lg)] text-center max-w-[340px]">
                   <p className="text-[1.1rem] font-bold mb-3">Sound familiar?</p>
                   <p className="text-[0.88rem] text-text-muted mb-5">
-                    Our $149 exam includes cervical X-rays, sEMG nerve scan, and your first adjustment. Find out what&apos;s causing your neck pain.
+                    Our $67 exam includes cervical X-rays, sEMG nerve scan, and your first adjustment. Find out what&apos;s causing your neck pain.
                   </p>
                   <Link href="/schedule" className="inline-flex items-center justify-center gap-2 w-full px-8 py-4 bg-primary text-white rounded-[16px] font-bold hover:bg-primary-dark transition-all">
-                    Book Your $149 Exam &rarr;
+                    Book Your $67 Exam &rarr;
                   </Link>
                   <p className="text-[0.75rem] text-text-muted mt-3">Se Habla Espa&ntilde;ol &middot; (817) 962-0182</p>
                 </div>
@@ -198,7 +198,7 @@ export default function NeckPainPage() {
         </section>
       </ScrollReveal>
 
-      <ConversionCTA headline="Stop living with neck pain." subtext='Book your <span class="text-accent">$149</span> exam and find out what&apos;s causing it.' />
+      <ConversionCTA headline="Stop living with neck pain." subtext='Book your <span class="text-accent">$67</span> exam and find out what&apos;s causing it.' />
     </>
   );
 }

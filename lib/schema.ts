@@ -138,7 +138,7 @@ export function localBusinessSchema() {
         },
       })),
     },
-    image: `${BASE_URL}/images/hero.jpg`,
+    image: `${BASE_URL}/images/heroes/hero-clinic-chiropractic.webp`,
     description:
       "Vitality Family Chiropractic in Arlington TX offers corrective chiropractic care for families, pregnant mothers, children, and athletes. 3 doctors. MaxLiving affiliated. Se Habla Espanol.",
   };
@@ -170,7 +170,7 @@ export function organizationSchema(socialLinks?: string[]) {
     url: BUSINESS.url,
     telephone: BUSINESS.phone,
     address: buildAddress(),
-    logo: `${BASE_URL}/images/logo.png`,
+    logo: `${BASE_URL}/images/logo.svg`,
     sameAs: socialLinks ?? [],
     contactPoint: {
       "@type": "ContactPoint",

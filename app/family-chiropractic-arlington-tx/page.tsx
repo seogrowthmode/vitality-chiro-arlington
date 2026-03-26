@@ -59,7 +59,7 @@ export default function FamilyChiropracticPage() {
       >
         <div className="mt-7 flex gap-3 flex-wrap">
           <Link href="/schedule" className="inline-flex items-center gap-2 px-10 py-4 bg-primary text-white rounded-[16px] font-bold text-[1.05rem] hover:bg-primary-dark transition-all">
-            Book Your Family&apos;s $149 Exam &rarr;
+            Book Your Family&apos;s $67 Exam &rarr;
           </Link>
           <a href="tel:8179620182" className="inline-flex items-center gap-2 px-10 py-4 border-2 border-primary/40 text-primary rounded-[16px] font-bold text-[1.05rem] hover:bg-primary/10 transition-all">
             Call (817) 962-0182
@@ -167,7 +167,7 @@ export default function FamilyChiropracticPage() {
         </section>
       </ScrollReveal>
 
-      <ConversionCTA headline="Your family's vitality starts here." subtext='Book your <span class="text-accent">$149</span> exam. Newborns to grandparents &mdash; everyone is welcome.' />
+      <ConversionCTA headline="Your family's vitality starts here." subtext='Book your <span class="text-accent">$67</span> exam. Newborns to grandparents &mdash; everyone is welcome.' />
     </>
   );
 }

@@ -8,7 +8,7 @@ interface ConversionCTAProps {
 
 export default function ConversionCTA({
   headline = "Ready to start?",
-  subtext = "Book your $149 new patient exam today.",
+  subtext = "Book your $67 new patient exam today.",
   bgClass = "bg-deep-teal",
 }: ConversionCTAProps) {
   return (
@@ -21,7 +21,7 @@ export default function ConversionCTA({
             href="/schedule"
             className="inline-flex items-center gap-2 px-10 py-4 bg-accent text-white rounded-[16px] font-bold text-[1.05rem] hover:bg-accent-dark hover:-translate-y-0.5 hover:shadow-[var(--shadow-card)] transition-all"
           >
-            Book Your $149 Exam &rarr;
+            Book Your $67 Exam &rarr;
           </Link>
           <a
             href="tel:8179620182"

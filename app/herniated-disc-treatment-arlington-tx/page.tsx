@@ -37,7 +37,7 @@ const faqItems = [
   {
     question: "Will I need to get an MRI for a herniated disc?",
     answer:
-      "We start with digital spinal X-rays and sEMG nerve scans during your $149 new patient exam. X-rays show us the structural alignment of your spine and the spacing between vertebrae. If your symptoms and examination findings suggest a significant disc herniation, we may recommend an MRI for more detailed imaging of the soft tissue. We will always explain our reasoning and give you options. Call (817) 962-0182 to schedule.",
+      "We start with digital spinal X-rays and sEMG nerve scans during your $67 new patient exam. X-rays show us the structural alignment of your spine and the spacing between vertebrae. If your symptoms and examination findings suggest a significant disc herniation, we may recommend an MRI for more detailed imaging of the soft tissue. We will always explain our reasoning and give you options. Call (817) 962-0182 to schedule.",
   },
 ];
 
@@ -121,10 +121,10 @@ export default function HerniatedDiscPage() {
                 <div className="bg-white rounded-[18px] p-9 shadow-[var(--shadow-card-lg)] text-center max-w-[340px]">
                   <p className="text-[1.1rem] font-bold mb-3">Sound familiar?</p>
                   <p className="text-[0.88rem] text-text-muted mb-5">
-                    Our $149 exam includes spinal X-rays, sEMG nerve scan, and your first adjustment. Let us find out if a disc herniation is the cause.
+                    Our $67 exam includes spinal X-rays, sEMG nerve scan, and your first adjustment. Let us find out if a disc herniation is the cause.
                   </p>
                   <Link href="/schedule" className="inline-flex items-center justify-center gap-2 w-full px-8 py-4 bg-primary text-white rounded-[16px] font-bold hover:bg-primary-dark transition-all">
-                    Book Your $149 Exam &rarr;
+                    Book Your $67 Exam &rarr;
                   </Link>
                   <p className="text-[0.75rem] text-text-muted mt-3">Se Habla Espa&ntilde;ol &middot; (817) 962-0182</p>
                 </div>
@@ -201,7 +201,7 @@ export default function HerniatedDiscPage() {
         </section>
       </ScrollReveal>
 
-      <ConversionCTA headline="A herniated disc doesn't mean surgery." subtext='Book your <span class="text-accent">$149</span> exam and explore non-surgical options.' />
+      <ConversionCTA headline="A herniated disc doesn't mean surgery." subtext='Book your <span class="text-accent">$67</span> exam and explore non-surgical options.' />
     </>
   );
 }

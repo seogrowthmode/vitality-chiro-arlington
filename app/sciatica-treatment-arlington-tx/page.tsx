@@ -27,7 +27,7 @@ const faqItems = [
   {
     question: "How long does sciatica take to heal with chiropractic care?",
     answer:
-      "Most sciatica patients begin to feel improvement within 2-4 weeks of starting chiropractic care. Full resolution depends on the underlying cause and severity. Acute sciatica from a minor misalignment may resolve in 4-6 weeks. Sciatica caused by a significant disc herniation may require 3-6 months of corrective care. Your doctor will provide a clear timeline after your $149 new patient exam.",
+      "Most sciatica patients begin to feel improvement within 2-4 weeks of starting chiropractic care. Full resolution depends on the underlying cause and severity. Acute sciatica from a minor misalignment may resolve in 4-6 weeks. Sciatica caused by a significant disc herniation may require 3-6 months of corrective care. Your doctor will provide a clear timeline after your $67 new patient exam.",
   },
   {
     question: "Is surgery the only option for severe sciatica?",
@@ -118,10 +118,10 @@ export default function SciaticaPage() {
                 <div className="bg-white rounded-[18px] p-9 shadow-[var(--shadow-card-lg)] text-center max-w-[340px]">
                   <p className="text-[1.1rem] font-bold mb-3">Sound familiar?</p>
                   <p className="text-[0.88rem] text-text-muted mb-5">
-                    Our $149 exam includes lumbar X-rays, sEMG nerve scan, and your first adjustment. Find out what&apos;s causing your sciatica.
+                    Our $67 exam includes lumbar X-rays, sEMG nerve scan, and your first adjustment. Find out what&apos;s causing your sciatica.
                   </p>
                   <Link href="/schedule" className="inline-flex items-center justify-center gap-2 w-full px-8 py-4 bg-primary text-white rounded-[16px] font-bold hover:bg-primary-dark transition-all">
-                    Book Your $149 Exam &rarr;
+                    Book Your $67 Exam &rarr;
                   </Link>
                   <p className="text-[0.75rem] text-text-muted mt-3">Se Habla Espa&ntilde;ol &middot; (817) 962-0182</p>
                 </div>
@@ -198,7 +198,7 @@ export default function SciaticaPage() {
         </section>
       </ScrollReveal>
 
-      <ConversionCTA headline="Stop the shooting pain. Start healing." subtext='Book your <span class="text-accent">$149</span> sciatica evaluation today.' />
+      <ConversionCTA headline="Stop the shooting pain. Start healing." subtext='Book your <span class="text-accent">$67</span> sciatica evaluation today.' />
     </>
   );
 }
