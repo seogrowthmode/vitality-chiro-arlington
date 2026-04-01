@@ -58,7 +58,7 @@ export default function HomePage() {
               <span className="block text-[clamp(48px,5.5vw,72px)] font-black text-primary">Your Vitality.</span>
             </h1>
             <p className="text-[1.05rem] text-text-muted max-w-[520px] mb-7 leading-relaxed mx-auto lg:mx-0">
-              Vitality Family Chiropractic is an Arlington TX chiropractic clinic led by Dr. Elise London and two associate doctors. We deliver prenatal chiropractic, pediatric chiropractic, sports chiropractic, and corrective spinal care for your whole family.
+              Vitality Family Chiropractic is an Arlington TX chiropractic clinic led by Dr. Elise Hernandez and two associate doctors. We deliver prenatal chiropractic, pediatric chiropractic, sports chiropractic, and corrective spinal care for your whole family.
             </p>
             <div className="flex flex-wrap gap-2.5 mb-6 justify-center lg:justify-start">
               <div className="px-4 py-2 rounded-full text-[0.78rem] font-bold text-white bg-primary flex items-center gap-1.5">
