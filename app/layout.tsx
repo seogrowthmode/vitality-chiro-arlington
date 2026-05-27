@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import MobileCTA from "@/components/MobileCTA";
 import GrainOverlay from "@/components/GrainOverlay";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
 import { localBusinessSchema, organizationSchema } from "@/lib/schema";
 
 const nunito = Nunito({
@@ -69,6 +70,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${nunito.variable} font-[var(--font-nunito)] antialiased`}>
+        <GoogleAnalytics />
         <GrainOverlay />
         <Header />
         <main>{children}</main>
