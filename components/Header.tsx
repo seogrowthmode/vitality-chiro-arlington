@@ -161,7 +161,7 @@ export default function Header() {
               href="/schedule"
               className="hidden sm:inline-flex bg-primary text-white px-5 py-2.5 rounded-[16px] font-bold text-[0.85rem] hover:bg-primary-dark hover:-translate-y-px transition-all"
             >
-              Book Your $67 Exam
+              Book Your <span className="font-black text-white ml-1">$67</span>{" "}Exam
             </Link>
 
             {/* Hamburger */}

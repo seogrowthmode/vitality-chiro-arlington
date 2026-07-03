@@ -1,353 +1,237 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import AppointmentForm from "@/components/AppointmentForm";
+import ScrollReveal from "@/components/ScrollReveal";
 import FAQAccordion from "@/components/FAQAccordion";
-import { CheckIcon, PhoneIcon, StarIcon } from "@/components/Icons";
+import ReviewCard from "@/components/ReviewCard";
+import AppointmentForm from "@/components/AppointmentForm";
+import { CheckIcon, SpineIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
-  title: "Arlington TX Chiropractor | $67 New Patient Exam",
+  title: "Family Chiropractor Arlington TX | Vitality Family Chiropractic",
   description:
-    "Schedule a $67 new patient exam at Vitality Family Chiropractic in Arlington, TX. Consultation, comprehensive exam, spinal X-rays, sEMG nerve scan, and posture analysis.",
+    "Vitality Family Chiropractic helps Arlington families with prenatal chiropractic, pediatric chiropractic, corrective spinal care, sports chiropractic, and MaxLiving wellness support.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "Arlington TX Chiropractor | Vitality Family Chiropractic",
+    title: "Family Chiropractor Arlington TX | Vitality Family Chiropractic",
     description:
-      "$67 new patient exam with consultation, comprehensive exam, spinal X-rays, sEMG nerve scan, and posture analysis.",
+      "Prenatal chiropractic, pediatric chiropractic, corrective spinal care, sports chiropractic, and family wellness in Arlington, TX with Dr. Elise Hernandez and the Vitality team.",
     url: "https://vitalitychiroarlington.com",
   },
 };
 
-const includedItems = [
-  "Consultation",
-  "Comprehensive exam",
-  "Spinal X-rays",
-  "sEMG nerve scan",
-  "Posture analysis",
-];
-
-const visitReasons = [
-  {
-    title: "Pregnancy care",
-    text: "Webster-certified prenatal support for comfort, alignment, and family wellness.",
-    href: "/prenatal-chiropractic-arlington-tx",
-  },
-  {
-    title: "Kids and family",
-    text: "Gentle pediatric and family chiropractic care from newborns through adulthood.",
-    href: "/pediatric-chiropractor-arlington-tx",
-  },
-  {
-    title: "Pain or posture",
-    text: "Back pain, neck pain, headaches, sciatica, disc symptoms, and spinal correction.",
-    href: "/back-pain-treatment-arlington-tx",
-  },
-  {
-    title: "Sports and movement",
-    text: "Sports chiropractic, mobility, soft tissue support, and performance-focused care.",
-    href: "/sports-chiropractor-arlington-tx",
-  },
-];
-
-const processSteps = [
-  {
-    step: "01",
-    title: "Request a visit",
-    text: "Send the short form or call the office. The team confirms the best appointment time.",
-  },
-  {
-    step: "02",
-    title: "Get measured",
-    text: "Your visit starts with a consultation, exam, spinal X-rays when clinically appropriate, and sEMG nerve scan.",
-  },
-  {
-    step: "03",
-    title: "Review the plan",
-    text: "Dr. Elise and the Vitality team explain what they found and what your next step should be.",
-  },
-];
-
 const faqItems = [
-  {
-    question: "What is included in the $67 new patient exam?",
-    answer:
-      "The $67 new patient exam includes a consultation, comprehensive exam, spinal X-rays when clinically appropriate, sEMG nerve scan, and posture analysis. The normal value is $320.",
-  },
-  {
-    question: "Where is Vitality Family Chiropractic located?",
-    answer:
-      "Vitality Family Chiropractic is located at 1106 W. Pioneer Parkway, Suite 300, Arlington, TX 76013.",
-  },
-  {
-    question: "Can I schedule for prenatal or pediatric care?",
-    answer:
-      "Yes. Dr. Elise Hernandez and the team provide prenatal, pediatric, and family chiropractic care, and the office has bilingual staff available.",
-  },
-  {
-    question: "Can I call instead of using the form?",
-    answer:
-      "Yes. You can call the office at (817) 962-0182 if you would rather schedule by phone.",
-  },
+  { question: "What's included in the $67 new patient exam?", answer: "Your $67 exam (normally $320) includes a comprehensive consultation, full spinal examination, digital X-rays, sEMG nerve scan, and posture analysis. You save $253 and leave with a clear picture of your spinal health." },
+  { question: "Do you specialize in prenatal chiropractic?", answer: "Yes! Dr. Elise and Dr. Mary are both Webster Technique certified. We specialize in prenatal chiropractic care, helping moms-to-be stay comfortable, reduce back pain, and prepare for healthier deliveries." },
+  { question: "Is chiropractic safe for my baby or child?", answer: "Absolutely. Pediatric adjustments use finger-tip pressure lighter than what you'd use to check a ripe tomato. Dr. Elise has adjusted infants as young as 2 days old." },
+  { question: "What's the MaxLiving 5 Essentials approach?", answer: "MaxLiving's 5 Essentials are: Core Chiropractic, Nutrition, Exercise, Mindset, and Toxin Reduction. We address your whole health — not just your spine." },
+  { question: "Do you treat athletes and sports injuries?", answer: "Dr. Chad London is a CCSP-certified sports chiropractor and former professional rugby player with the Dallas Jackals. He uses FAKTR soft tissue techniques." },
+  { question: "Do you accept insurance?", answer: "We accept most major insurance plans. Contact our office at (817) 962-0182 and our team will verify your coverage before your visit." },
+  { question: "Do you speak Spanish?", answer: "Si! We have bilingual staff members who provide care and communication in both English and Spanish." },
+  { question: "What makes Vitality different from other Arlington chiropractors?", answer: "Three doctors with three distinct specialties. A former WNBA team chiropractor. A former pro rugby player. A dedicated nutritionist. Bilingual staff. All-ages care from newborns to seniors." },
 ];
 
-const proofPoints = ["3 doctors", "370+ reviews", "Se habla Espanol", "MaxLiving health center"];
+const reviews = [
+  { quote: "Dr. Elise changed my pregnancy. I had terrible back pain and after just 3 visits I felt like a new person.", name: "Sarah M.", tag: "Prenatal Care" },
+  { quote: "My 3-week-old was colicky and not sleeping. Dr. Mary adjusted him so gently — he slept 6 hours that night.", name: "Amanda R.", tag: "Pediatric" },
+  { quote: "I've been to 5 chiropractors. Vitality is the only one that actually corrected my spine instead of just cracking it.", name: "Carlos G.", tag: "Spinal Correction" },
+  { quote: "Katy's nutrition program helped me lose 22 lbs in 3 months. Life-changing.", name: "Jennifer T.", tag: "Nutrition" },
+  { quote: "Dr. Chad got me back on the field in 2 weeks after my hamstring tear.", name: "Marcus D.", tag: "Sports" },
+  { quote: "The bilingual staff made my abuela feel so comfortable. Everyone speaks Spanish.", name: "Maria L.", tag: "Family Care" },
+  { quote: "We bring our entire family. They know all of us by name. We've been coming since 2019.", name: "Stephanie W.", tag: "Family Wellness" },
+  { quote: "Had migraines for 12 years. After 6 weeks of corrective care, they're gone.", name: "David K.", tag: "Headaches" },
+];
 
 export default function HomePage() {
   return (
     <>
-      <section className="relative overflow-hidden bg-linen">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="/images/heroes/hero-clinic-chiropractic.webp"
-            alt="Vitality Family Chiropractic clinic in Arlington, TX"
-            fill
-            priority
-            className="object-cover opacity-12"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(248,245,241,0.98)_0%,rgba(248,245,241,0.92)_54%,rgba(232,245,244,0.9)_100%)]" />
-        </div>
-
-        <div className="relative z-[1] max-w-[1180px] mx-auto px-5 sm:px-8 py-8 sm:py-10 lg:py-14">
-          <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_430px] gap-7 lg:gap-10 items-start">
-            <div className="pt-3 lg:pt-7">
-              <div className="inline-flex items-center gap-2 rounded-full bg-white px-3.5 py-2 text-[0.82rem] font-extrabold text-deep-teal shadow-[var(--shadow-card)]">
-                <StarIcon className="w-4 h-4 text-accent" />
-                Arlington TX new patient special
+      {/* HERO */}
+      <section className="min-h-[90vh] lg:min-h-[90vh] bg-linen flex items-center relative overflow-hidden">
+        <div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-20 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center py-20 lg:py-16">
+          <div className="relative z-[2] text-center lg:text-left">
+            <span className="eyebrow text-accent">ARLINGTON&apos;S FAMILY CHIROPRACTOR</span>
+            <h1 className="leading-[1.1] mb-6">
+              <span className="block text-[clamp(32px,3.5vw,44px)] font-normal text-text">Your Family Chiropractor</span>
+              <span className="block text-[clamp(32px,3.5vw,44px)] font-normal text-text">in Arlington TX.</span>
+              <span className="block text-[clamp(48px,5.5vw,72px)] font-black text-primary">Your Vitality.</span>
+            </h1>
+            <p className="text-[1.05rem] text-text-muted max-w-[520px] mb-7 leading-relaxed mx-auto lg:mx-0">
+              Vitality Family Chiropractic is an Arlington TX chiropractic clinic led by Dr. Elise Hernandez and two associate doctors. We deliver prenatal chiropractic, pediatric chiropractic, sports chiropractic, and corrective spinal care for your whole family.
+            </p>
+            <div className="flex flex-wrap gap-2.5 mb-6 justify-center lg:justify-start">
+              <div className="px-4 py-2 rounded-full text-[0.78rem] font-bold text-white bg-primary flex items-center gap-1.5">
+                <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                Former WNBA Dallas Wings Chiropractor
               </div>
-
-              <h1 className="mt-5 max-w-[760px] text-[2.35rem] sm:text-[4rem] lg:text-[5rem] leading-[0.95] font-black text-deep-teal">
-                Start with a $67 chiropractic exam.
-              </h1>
-
-              <p className="mt-4 max-w-[620px] text-[1rem] sm:text-[1.12rem] leading-relaxed text-text-muted">
-                Schedule with Vitality Family Chiropractic in Arlington, TX. Your visit includes a consultation,
-                comprehensive exam, spinal X-rays, sEMG nerve scan, and posture analysis.
-              </p>
-
-              <div className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-2.5 max-w-[700px]">
-                {proofPoints.map((proof) => (
-                  <div key={proof} className="rounded-[8px] border border-border bg-white/80 px-3 py-2 text-center text-[0.8rem] font-bold text-text">
-                    {proof}
-                  </div>
-                ))}
-              </div>
-
-              <div className="mt-7 flex flex-col sm:flex-row gap-3">
-                <a
-                  href="#request"
-                  className="inline-flex min-h-[52px] items-center justify-center rounded-[8px] bg-primary px-7 py-3 text-[0.98rem] font-black text-white transition-colors hover:bg-primary-dark"
-                >
-                  Request Appointment
-                </a>
-                <a
-                  href="tel:8179620182"
-                  className="inline-flex min-h-[52px] items-center justify-center gap-2 rounded-[8px] border-2 border-deep-teal px-7 py-3 text-[0.98rem] font-black text-deep-teal transition-colors hover:bg-deep-teal hover:text-white"
-                >
-                  <PhoneIcon className="w-4 h-4" />
-                  Call (817) 962-0182
-                </a>
-              </div>
-
-              <div className="mt-8 hidden flex-col gap-3 sm:flex sm:flex-row sm:items-center">
-                <div className="relative h-[74px] w-[74px] overflow-hidden rounded-full border-4 border-white shadow-[var(--shadow-card)]">
-                  <Image
-                    src="/images/staff/dr-elise-hernandez.jpg"
-                    alt="Dr. Elise Hernandez"
-                    fill
-                    className="object-cover object-top"
-                    sizes="74px"
-                  />
-                </div>
-                <p className="max-w-[520px] text-[0.92rem] leading-relaxed text-text-muted">
-                  Led by Dr. Elise Hernandez with prenatal, pediatric, sports, and corrective care available for
-                  families across Arlington.
-                </p>
+              <div className="px-4 py-2 rounded-full text-[0.78rem] font-bold text-white bg-sage flex items-center gap-1.5">
+                <CheckIcon className="w-3.5 h-3.5" />
+                MaxLiving Health Center
               </div>
             </div>
-
-            <div id="request" className="rounded-[8px] border border-border bg-white p-5 shadow-[var(--shadow-card-lg)] lg:sticky lg:top-24">
-              <div className="mb-4 rounded-[8px] bg-deep-teal p-4 text-white">
-                <div className="flex items-end justify-between gap-4">
-                  <div>
-                    <p className="text-[0.78rem] font-bold uppercase text-primary">New Patient Exam</p>
-                    <p className="mt-1 text-[2.4rem] leading-none font-black">$67</p>
-                  </div>
-                  <div className="text-right">
-                    <p className="text-[0.78rem] text-white/65">Normally</p>
-                    <p className="text-[1.1rem] font-extrabold line-through text-white/70">$320</p>
-                  </div>
-                </div>
-                <div className="mt-4 grid grid-cols-1 gap-2">
-                  {includedItems.slice(0, 4).map((item) => (
-                    <div key={item} className="flex items-center gap-2 text-[0.86rem]">
-                      <CheckIcon className="h-4 w-4 flex-shrink-0 text-primary" />
-                      <span>{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-              <AppointmentForm pageSource="homepage-jf-hero" variant="compact" buttonLabel="Request My Visit" />
-              <p className="mt-3 text-center text-[0.75rem] leading-relaxed text-text-muted">
-                Please do not submit urgent medical details. For emergencies, call 911.
-              </p>
+            <div className="text-[0.85rem] text-text-muted flex items-center gap-2 flex-wrap justify-center lg:justify-start">
+              <span className="text-accent font-bold">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.9 <span className="opacity-50">&middot;</span> 370+ Reviews <span className="opacity-50">&middot;</span> 3 Doctors <span className="opacity-50">&middot;</span> Se Habla Espa&ntilde;ol
             </div>
+          </div>
+          <div className="relative z-[1] flex justify-center lg:justify-end">
+            <Image src="/images/staff/dr-elise-hernandez.jpg" alt="Dr. Elise Hernandez — Founder of Vitality Family Chiropractic" width={560} height={700} className="w-full max-w-[560px] h-auto object-cover object-top rounded-[18px]" priority />
           </div>
         </div>
       </section>
 
-      <section className="border-y border-border bg-white">
-        <div className="mx-auto grid max-w-[1180px] grid-cols-1 divide-y divide-border px-5 sm:px-8 md:grid-cols-3 md:divide-x md:divide-y-0">
-          {processSteps.map((item) => (
-            <div key={item.step} className="py-7 md:px-6">
-              <p className="text-[0.82rem] font-black text-accent">{item.step}</p>
-              <h2 className="mt-1 text-[1.18rem] font-black text-deep-teal">{item.title}</h2>
-              <p className="mt-2 text-[0.92rem] leading-relaxed text-text-muted">{item.text}</p>
+      {/* WHO WE HELP */}
+      <ScrollReveal><section className="py-24 bg-white"><div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-20">
+        <div className="text-center mb-13"><span className="eyebrow text-sage">CARE FOR EVERYONE</span><h2><span className="block text-[clamp(28px,3vw,40px)] font-normal">Family Chiropractor</span><span className="block text-[clamp(36px,4vw,56px)] font-black">in Arlington TX</span></h2></div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {[
+            { title: "I'm Pregnant", desc: "Prenatal chiropractic with Webster-certified doctors.", color: "bg-primary", href: "/prenatal-chiropractic-arlington-tx" },
+            { title: "My Kid Needs Care", desc: "Gentle pediatric care from newborns to teens.", color: "bg-sage", href: "/pediatric-chiropractor-arlington-tx" },
+            { title: "I'm In Pain", desc: "Corrective chiropractic that fixes the root cause.", color: "bg-accent", href: "/back-pain-treatment-arlington-tx" },
+            { title: "I'm An Athlete", desc: "Sports chiro with a former pro rugby player.", color: "bg-neutral", href: "/schedule" },
+          ].map((card, i) => (
+            <Link key={i} href={card.href} className={`${card.color} p-9 rounded-[18px] text-white text-center transition-all duration-300 hover:-translate-y-2 hover:scale-[1.03] hover:shadow-[var(--shadow-card-lg)]`}>
+              <h3 className="text-[1.15rem] font-extrabold mb-2">{card.title}</h3>
+              <p className="text-[0.82rem] opacity-90 leading-snug">{card.desc}</p>
+            </Link>
+          ))}
+        </div>
+      </div></section></ScrollReveal>
+
+      {/* DOCTORS */}
+      <ScrollReveal><section className="py-24 bg-linen"><div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-20">
+        <div className="text-center mb-14"><span className="eyebrow text-primary">THREE DOCTORS. THREE SPECIALTIES.</span><h2><span className="block text-[clamp(28px,3vw,44px)] font-normal">Prenatal Chiropractor</span><span className="block text-[clamp(36px,4vw,56px)] font-black">Arlington TX</span></h2></div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-[1000px] mx-auto">
+          {[
+            { name: "Dr. Elise Hernandez, D.C.", creds: "Founder · Prenatal & Pediatric Specialist\nUF → Life University · WNBA Dallas Wings", color: "border-primary", linkColor: "text-primary", img: "/images/staff/dr-elise-hernandez.jpg" },
+            { name: "Dr. Mary Davis, D.C.", creds: "Prenatal Specialist · Pregnancy Educator\nTexas Chiropractic College", color: "border-sage", linkColor: "text-sage", img: "/images/staff/dr-mary-davis.jpg" },
+            { name: "Dr. Chad London, D.C., CCSP", creds: "Sports & Performance Specialist\nPalmer College · Former Dallas Jackals", color: "border-accent", linkColor: "text-accent", img: "/images/staff/dr-chad-london.jpg" },
+          ].map((doc, i) => (
+            <div key={i} className={`bg-white rounded-[18px] shadow-[var(--shadow-card-lg)] overflow-hidden border-t-[5px] ${doc.color} hover:-translate-y-3 transition-all duration-500`}>
+              <div className="h-[260px] bg-linen overflow-hidden">
+                <Image src={doc.img} alt={doc.name} width={360} height={260} className="w-full h-full object-cover object-top" />
+              </div>
+              <div className="p-5 pb-6">
+                <h3 className="text-[1.1rem] font-extrabold mb-1">{doc.name}</h3>
+                <p className="text-[0.78rem] text-text-muted mb-2.5 leading-snug whitespace-pre-line">{doc.creds}</p>
+                <Link href="/team" className={`text-[0.85rem] font-bold ${doc.linkColor} hover:gap-2 transition-all`}>Meet {doc.name.split(",")[0]} &rarr;</Link>
+              </div>
             </div>
           ))}
         </div>
-      </section>
+      </div></section></ScrollReveal>
 
-      <section className="bg-soft-teal py-16 lg:py-20">
-        <div className="mx-auto max-w-[1180px] px-5 sm:px-8">
-          <div className="max-w-[680px]">
-            <p className="text-[0.86rem] font-extrabold text-primary">Choose the reason you are booking</p>
-            <h2 className="mt-2 text-[2rem] sm:text-[2.6rem] leading-tight font-black text-deep-teal">
-              Care paths built around real family needs.
-            </h2>
-          </div>
-
-          <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {visitReasons.map((reason) => (
-              <Link
-                key={reason.title}
-                href={reason.href}
-                className="group rounded-[8px] border border-border bg-white p-5 shadow-[var(--shadow-card)] transition-transform hover:-translate-y-1"
-              >
-                <h3 className="text-[1.02rem] font-black text-deep-teal">{reason.title}</h3>
-                <p className="mt-2 min-h-[88px] text-[0.9rem] leading-relaxed text-text-muted">{reason.text}</p>
-                <span className="mt-4 inline-flex text-[0.86rem] font-black text-primary group-hover:text-primary-dark">
-                  View path
-                </span>
-              </Link>
-            ))}
-          </div>
+      {/* PRENATAL */}
+      <ScrollReveal><section className="py-24 bg-soft-teal"><div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-20 grid grid-cols-1 lg:grid-cols-[1.4fr_1fr] gap-14 items-center">
+        <div>
+          <span className="eyebrow text-sage">FOR MOMS &amp; LITTLE ONES</span>
+          <h2 className="mb-5"><span className="block text-[clamp(28px,3vw,40px)] font-normal">Pediatric Chiropractic Care</span><span className="block text-[clamp(36px,4vw,56px)] font-black">Arlington TX</span></h2>
+          <p className="text-base text-text-muted mb-8 leading-relaxed">Two Webster-certified doctors serving Arlington TX families. Gentle care from pregnancy through childhood. Dr. Elise and Dr. Mary specialize in prenatal and pediatric chiropractic in Arlington &mdash; helping moms stay comfortable, reduce back pain, and prepare for healthier deliveries.</p>
+          {["Webster Technique Certified", "Gentle Infant & Toddler Adjustments", "Supporting Development"].map((item, i) => (
+            <div key={i} className="flex gap-3.5 items-start mb-5"><CheckIcon className="w-7 h-7 text-sage flex-shrink-0" /><h4 className="text-[0.95rem] font-bold">{item}</h4></div>
+          ))}
+          <p className="text-[0.85rem] text-primary font-semibold mt-2">Se Habla Espa&ntilde;ol</p>
         </div>
-      </section>
+        <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)] relative min-h-[400px]">
+          <Image src="/images/services/prenatal-chiropractic-care-clinic-treatment-3.webp" alt="Prenatal chiropractic care — Webster Technique adjustment for expecting mothers" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 45vw" />
+        </div>
+      </div></section></ScrollReveal>
 
-      <section className="bg-white py-16 lg:py-20">
-        <div className="mx-auto grid max-w-[1180px] grid-cols-1 gap-8 px-5 sm:px-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-center">
-          <div className="relative min-h-[430px] overflow-hidden rounded-[8px] bg-linen">
-            <Image
-              src="/images/team/team-mission-wall.jpg"
-              alt="Vitality Family Chiropractic team at the Arlington office"
-              fill
-              className="object-cover"
-              sizes="(max-width: 1024px) 100vw, 520px"
-            />
-          </div>
-          <div>
-            <p className="text-[0.86rem] font-extrabold text-accent">Why families choose Vitality</p>
-            <h2 className="mt-2 text-[2rem] sm:text-[2.7rem] leading-tight font-black text-deep-teal">
-              Direct answers, measured findings, and a clear next step.
-            </h2>
-            <p className="mt-4 text-[1rem] leading-relaxed text-text-muted">
-              The homepage is now centered around the appointment request, but the trust story is still visible:
-              three doctors, bilingual support, MaxLiving care, and specialty paths for prenatal, pediatric,
-              corrective, and sports chiropractic.
-            </p>
-            <div className="mt-6 grid grid-cols-1 gap-3 sm:grid-cols-2">
-              {[
-                "Webster-certified prenatal care",
-                "Pediatric and family chiropractic",
-                "Sports chiropractic and performance care",
-                "sEMG scan and posture analysis",
-              ].map((item) => (
-                <div key={item} className="flex items-start gap-3 rounded-[8px] border border-border bg-linen p-4">
-                  <CheckIcon className="mt-0.5 h-5 w-5 flex-shrink-0 text-primary" />
-                  <span className="text-[0.9rem] font-bold text-text">{item}</span>
+      {/* SPORTS */}
+      <ScrollReveal><section className="py-20 bg-white"><div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-20 grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-14 items-center">
+        <div className="rounded-[18px] overflow-hidden shadow-[var(--shadow-card)] relative min-h-[360px] order-last lg:order-first">
+          <Image src="/images/services/chiropractic-adjustments-clinic-treatment-1.webp" alt="Sports chiropractic treatment — Dr. Chad London working with an athlete" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 45vw" />
+        </div>
+        <div>
+          <span className="eyebrow text-accent">FOR ATHLETES</span>
+          <h2 className="mb-5"><span className="block text-[clamp(28px,3vw,40px)] font-normal">Sports Chiropractor</span><span className="block text-[clamp(36px,4vw,56px)] font-black text-accent">in Arlington TX</span></h2>
+          <p className="text-base text-text-muted mb-7 leading-relaxed">Dr. Chad London brings 6 years of professional rugby, CCSP sports certification, and FAKTR soft tissue techniques to Arlington TX athletes. Whether you play high school, college, or pro sports, Vitality Family Chiropractic has the sports chiropractic care you need.</p>
+          <Link href="/schedule" className="inline-flex items-center gap-2 px-8 py-4 bg-accent text-white rounded-[16px] font-bold hover:bg-accent-dark transition-all">Book a Sports Assessment &rarr;</Link>
+          <div className="flex flex-wrap gap-2 mt-4">{["CCSP", "FAKTR", "Webster", "Former Dallas Jackals"].map((b) => <span key={b} className="px-3.5 py-1.5 rounded-full text-[0.72rem] font-bold text-accent border-[1.5px] border-accent">{b}</span>)}</div>
+        </div>
+      </div></section></ScrollReveal>
+
+      {/* SERVICES */}
+      <ScrollReveal><section id="services" className="py-24 bg-linen"><div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-20">
+        <div className="text-center mb-13"><span className="eyebrow text-primary">WHAT WE DO</span><h2><span className="font-normal text-[clamp(28px,3vw,40px)]">Chiropractic Services</span><span className="block font-black text-[clamp(32px,3.5vw,48px)]">in Arlington TX</span></h2></div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {[
+            { label: "Core Chiropractic", color: "text-primary", border: "border-t-primary", services: ["Chiropractic Adjustments", "Advanced Spinal Correction", "Corrective Exercises"] },
+            { label: "Family & Specialty", color: "text-sage", border: "border-t-sage", services: ["Prenatal Chiropractic", "Pediatric Chiropractic", "Family Wellness Care"] },
+            { label: "Sports & Performance", color: "text-accent", border: "border-t-accent", services: ["Sports Chiropractic", "sEMG Nerve Scan", "Orthopedic Testing"] },
+            { label: "Nutrition & Wellness", color: "text-neutral", border: "border-t-neutral", services: ["Nutritional Coaching", "Metabolix Testing", "Detox Programs"] },
+          ].map((group) => (
+            <div key={group.label}>
+              <div className={`text-[0.68rem] font-bold tracking-[0.15em] uppercase mb-2.5 px-1 ${group.color}`}>{group.label}</div>
+              {group.services.map((svc) => (
+                <div key={svc} className={`bg-white rounded-[16px] p-5 mb-3 shadow-[var(--shadow-card)] border-t-[3px] ${group.border} hover:-translate-y-1 transition-all cursor-pointer`}>
+                  <h4 className="text-[0.9rem] font-bold mb-1">{svc}</h4>
+                  <span className={`text-[0.78rem] font-bold ${group.color}`}>Learn More &rarr;</span>
                 </div>
               ))}
             </div>
-          </div>
+          ))}
         </div>
-      </section>
+      </div></section></ScrollReveal>
 
-      <section className="bg-deep-teal py-16 lg:py-20 text-white">
-        <div className="mx-auto max-w-[1180px] px-5 sm:px-8">
-          <div className="grid grid-cols-1 gap-8 lg:grid-cols-[0.86fr_1.14fr] lg:items-start">
-            <div>
-              <p className="text-[0.86rem] font-extrabold text-primary">The $67 exam</p>
-              <h2 className="mt-2 text-[2rem] sm:text-[2.7rem] leading-tight font-black">
-                A simple start before any care decision.
-              </h2>
-              <p className="mt-4 text-[1rem] leading-relaxed text-white/72">
-                This section keeps the offer specific without promising treatment outcomes. Patients know what is
-                included, what it is worth, and what happens after they request a visit.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-              {includedItems.map((item, index) => (
-                <div key={item} className="rounded-[8px] border border-white/12 bg-white/8 p-5">
-                  <p className="text-[0.78rem] font-black text-primary">0{index + 1}</p>
-                  <h3 className="mt-1 text-[1.02rem] font-black">{item}</h3>
-                </div>
-              ))}
-              <div className="rounded-[8px] border border-primary/40 bg-primary/15 p-5">
-                <p className="text-[0.78rem] font-black text-primary">VALUE</p>
-                <h3 className="mt-1 text-[1.02rem] font-black">$67 today, normally $320</h3>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* REVIEWS */}
+      <ScrollReveal><section className="py-24 bg-deep-teal relative overflow-hidden"><div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-20 relative z-[1]">
+        <div className="text-center mb-13"><span className="eyebrow text-primary">ARLINGTON TX REVIEWS</span><h2><span className="block text-[clamp(28px,3vw,40px)] font-normal text-linen">Top-Rated Chiropractor</span><span className="block text-[clamp(36px,4vw,56px)] font-black text-primary">in Arlington TX</span></h2></div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">{reviews.map((r, i) => <ReviewCard key={i} quote={r.quote} name={r.name} tag={r.tag} even={i % 2 === 1} />)}</div>
+        <div className="text-center mt-10 text-[0.9rem] text-linen opacity-80"><span className="text-accent font-bold">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.9 Google &middot; 370+ Reviews</div>
+      </div></section></ScrollReveal>
 
-      <section className="bg-linen py-16 lg:py-20">
-        <div className="mx-auto grid max-w-[1180px] grid-cols-1 gap-8 px-5 sm:px-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-          <div>
-            <p className="text-[0.86rem] font-extrabold text-primary">Questions before booking</p>
-            <h2 className="mt-2 text-[2rem] sm:text-[2.6rem] leading-tight font-black text-deep-teal">
-              Quick answers for new patients.
-            </h2>
-            <p className="mt-4 text-[1rem] leading-relaxed text-text-muted">
-              Call the office if you want help picking the right visit type or need to ask about insurance before
-              scheduling.
-            </p>
-          </div>
-          <FAQAccordion items={faqItems} />
+      {/* $67 OFFER */}
+      <ScrollReveal><section id="offer" className="py-24 bg-white"><div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-20 grid grid-cols-1 lg:grid-cols-[1.2fr_1fr] gap-14 items-center">
+        <div>
+          <span className="eyebrow text-accent">NEW PATIENT SPECIAL</span>
+          <h2 className="leading-none"><span className="block text-[clamp(56px,6vw,80px)] font-black text-accent">$67.</span><span className="block text-[clamp(24px,2.5vw,32px)] font-normal text-neutral line-through mt-1">Normally $320.</span></h2>
+          <div className="text-[1.2rem] font-bold text-primary my-4">You save $253.</div>
+          <p className="text-[0.95rem] text-text-muted mb-2">Includes: Consultation &middot; Comprehensive Exam &middot; Spinal X-Rays &middot; sEMG Nerve Scan</p>
+          <p className="text-[0.88rem] text-text-muted mb-7">Posture analysis included. Same-day appointments available at our Arlington TX office.</p>
+          <Link href="/schedule" className="inline-flex items-center gap-2 px-10 py-4 bg-primary text-white rounded-[16px] font-bold text-[1.05rem] hover:bg-primary-dark transition-all">Book Your $67 Exam &rarr;</Link>
+          <p className="text-[0.85rem] text-text-muted mt-4">Se Habla Espa&ntilde;ol &middot; (817) 962-0182</p>
         </div>
-      </section>
+        <div className="bg-white rounded-[18px] shadow-[var(--shadow-card-lg)] border-t-4 border-accent overflow-hidden p-8">
+          <AppointmentForm pageSource="homepage-offer" variant="compact" buttonLabel="Book Now →" />
+        </div>
+      </div></section></ScrollReveal>
 
-      <section className="bg-white py-14">
-        <div className="mx-auto max-w-[1180px] px-5 sm:px-8">
-          <div className="grid grid-cols-1 gap-5 rounded-[8px] border border-border bg-soft-teal p-6 sm:p-8 lg:grid-cols-[1fr_auto] lg:items-center">
-            <div>
-              <h2 className="text-[1.7rem] sm:text-[2.2rem] leading-tight font-black text-deep-teal">
-                Ready to request the $67 exam?
-              </h2>
-              <p className="mt-2 text-[0.96rem] text-text-muted">
-                Vitality Family Chiropractic, 1106 W. Pioneer Parkway, Suite 300, Arlington, TX 76013.
-              </p>
+      {/* 5 ESSENTIALS */}
+      <ScrollReveal><section className="py-24 bg-linen"><div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-20">
+        <div className="text-center mb-14"><span className="eyebrow text-sage">THE MAXLIVING DIFFERENCE</span><h2><span className="block text-[clamp(28px,3vw,40px)] font-normal">MaxLiving Chiropractor</span><span className="block text-[clamp(36px,4vw,56px)] font-black">Arlington TX</span></h2></div>
+        <div className="flex flex-wrap justify-center gap-7">
+          {[
+            { name: "Chiropractic", desc: "Spinal correction restoring nervous system function.", color: "bg-primary" },
+            { name: "Nutrition", desc: "Personalized plans with Katy Moore.", color: "bg-sage" },
+            { name: "Exercise", desc: "Movement strategies for every body.", color: "bg-accent" },
+            { name: "Mindset", desc: "Stress management and resilience.", color: "bg-neutral" },
+            { name: "Toxin Reduction", desc: "Detox programs for better health.", color: "bg-warm" },
+          ].map((ess) => (
+            <div key={ess.name} className="text-center flex-[0_0_calc(33%-20px)] lg:flex-[0_0_calc(20%-22px)] min-w-[140px]">
+              <div className={`w-[72px] h-[72px] rounded-full ${ess.color} text-white flex items-center justify-center mx-auto mb-4 shadow-[var(--shadow-card)] hover:scale-110 transition-transform`}><SpineIcon className="w-8 h-8" /></div>
+              <h4 className="text-[0.85rem] font-extrabold uppercase tracking-[0.08em] mb-1.5">{ess.name}</h4>
+              <p className="text-[0.8rem] text-text-muted leading-snug">{ess.desc}</p>
             </div>
-            <div className="flex flex-col gap-3 sm:flex-row">
-              <a
-                href="#request"
-                className="inline-flex min-h-[50px] items-center justify-center rounded-[8px] bg-primary px-6 py-3 text-[0.95rem] font-black text-white hover:bg-primary-dark"
-              >
-                Request Appointment
-              </a>
-              <a
-                href="tel:8179620182"
-                className="inline-flex min-h-[50px] items-center justify-center rounded-[8px] border-2 border-deep-teal px-6 py-3 text-[0.95rem] font-black text-deep-teal hover:bg-deep-teal hover:text-white"
-              >
-                Call Now
-              </a>
-            </div>
-          </div>
+          ))}
         </div>
-      </section>
+      </div></section></ScrollReveal>
+
+      {/* FAQ */}
+      <ScrollReveal><section className="py-24 bg-white"><div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-20">
+        <div className="text-center mb-12"><span className="eyebrow text-neutral">COMMON QUESTIONS</span><h2><span className="block text-[clamp(28px,3vw,40px)] font-normal">Arlington TX Chiropractic</span><span className="block text-[clamp(36px,4vw,52px)] font-black">FAQ</span></h2></div>
+        <div className="max-w-[800px] mx-auto"><FAQAccordion items={faqItems} /></div>
+      </div></section></ScrollReveal>
+
+      {/* FINAL CTA */}
+      <ScrollReveal><section className="py-24 bg-soft-teal text-center"><div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-20">
+        <h2 className="mb-7"><span className="block text-[clamp(28px,3vw,44px)] font-normal">Your Arlington TX</span><span className="block text-[clamp(48px,5vw,72px)] font-black text-primary">Chiropractor</span><span className="block text-[clamp(28px,3vw,44px)] font-normal">is ready for you.</span></h2>
+        <div className="flex justify-center gap-4 mb-6 flex-wrap">
+          <Link href="/schedule" className="inline-flex items-center gap-2 px-10 py-4 bg-accent text-white rounded-[16px] font-bold text-[1.05rem] hover:bg-accent-dark transition-all">Book Your $67 Exam &rarr;</Link>
+          <a href="tel:8179620182" className="inline-flex items-center gap-2 px-10 py-4 border-2 border-neutral text-neutral rounded-[16px] font-bold text-[1.05rem] hover:bg-neutral hover:text-white transition-all">Call (817) 962-0182</a>
+        </div>
+        <p className="text-[0.85rem] text-text-muted">Se Habla Espa&ntilde;ol <span className="mx-2 opacity-40">|</span> 3 Doctors <span className="mx-2 opacity-40">|</span> Open 1st &amp; 3rd Saturdays <span className="mx-2 opacity-40">|</span> All Ages Welcome</p>
+      </div></section></ScrollReveal>
     </>
   );
 }
