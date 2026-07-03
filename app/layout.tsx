@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: "Vitality Family Chiropractic",
     title: "Vitality Family Chiropractic — Arlington TX",
     description:
-      "Three doctors. Bilingual staff. All ages welcome. $67 new patient exam includes consultation, X-rays, nerve scan, and first adjustment.",
+      "Three doctors. Bilingual staff. All ages welcome. $67 new patient exam includes consultation, X-rays, nerve scan, and posture analysis.",
     type: "website",
     locale: "en_US",
   },
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Vitality Family Chiropractic — Arlington TX",
     description:
-      "Three doctors. Bilingual staff. All ages welcome. $67 new patient exam includes consultation, X-rays, nerve scan, and first adjustment.",
+      "Three doctors. Bilingual staff. All ages welcome. $67 new patient exam includes consultation, X-rays, nerve scan, and posture analysis.",
   },
   // verification: {
   //   google: "GOOGLE_SEARCH_CONSOLE_VERIFICATION_CODE",

@@ -146,7 +146,7 @@ export default function HeadacheMigrainePage() {
                 <div className="bg-white rounded-[18px] p-9 shadow-[var(--shadow-card-lg)] text-center max-w-[340px]">
                   <p className="text-[1.1rem] font-bold mb-3">Sound familiar?</p>
                   <p className="text-[0.88rem] text-text-muted mb-5">
-                    Our $67 exam includes cervical X-rays, sEMG nerve scan, and your first adjustment. Find out what&apos;s triggering your headaches.
+                    Our $67 exam includes cervical X-rays, sEMG nerve scan, and posture analysis. Find out what&apos;s triggering your headaches.
                   </p>
                   <Link href="/schedule" className="inline-flex items-center justify-center gap-2 w-full px-8 py-4 bg-primary text-white rounded-[16px] font-bold hover:bg-primary-dark transition-all">
                     Book Your $67 Exam &rarr;

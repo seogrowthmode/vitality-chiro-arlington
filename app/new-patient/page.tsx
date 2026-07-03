@@ -9,11 +9,11 @@ import { CheckIcon } from "@/components/Icons";
 
 export const metadata: Metadata = {
   title: "New Patients — $67 Exam",
-  description: "New patient special: $67 comprehensive exam includes consultation, X-rays, nerve scan, and first adjustment. Save $253. Se Habla Español.",
+  description: "New patient special: $67 comprehensive exam includes consultation, X-rays, nerve scan, and posture analysis. Save $253. Se Habla Español.",
 };
 
 const faqItems = [
-  { question: "How long is the first visit?", answer: "Plan for about 45-60 minutes. This includes your consultation, examination, X-rays, nerve scan, and first adjustment." },
+  { question: "How long is the first visit?", answer: "Plan for about 45-60 minutes. This includes your consultation, examination, X-rays, nerve scan, posture analysis, and doctor recommendations." },
   { question: "What should I wear?", answer: "Comfortable clothing that allows easy movement. Avoid heavy jewelry. We have gowns available if needed for X-rays." },
   { question: "Can I bring my kids to my appointment?", answer: "Of course! We're a family practice — kids are always welcome. We have a kid-friendly waiting area." },
   { question: "Do you offer same-day appointments?", answer: "Yes! With three doctors on staff, we can often accommodate same-day appointments. Call us at (817) 962-0182 or book online." },
@@ -22,7 +22,7 @@ const faqItems = [
 export default function NewPatientPage() {
   return (
     <>
-      <PageHero variant="warm" breadcrumbs={[{ label: "Home", href: "/" }, { label: "New Patients" }]} eyebrow="NEW PATIENT SPECIAL" eyebrowColor="orange" titleSmall="Your $67 exam" titleLarge="includes everything." subtitle="Consultation, comprehensive exam, digital X-rays, sEMG nerve scan, and your first adjustment. Normally $320 — you save $253." />
+      <PageHero variant="warm" breadcrumbs={[{ label: "Home", href: "/" }, { label: "New Patients" }]} eyebrow="NEW PATIENT SPECIAL" eyebrowColor="orange" titleSmall="Your $67 exam" titleLarge="includes everything." subtitle="Consultation, comprehensive exam, digital X-rays, sEMG nerve scan, and posture analysis. Normally $320 — you save $253." />
 
       {/* WHAT TO EXPECT */}
       <ScrollReveal><section className="py-20 bg-white"><div className="max-w-[1440px] mx-auto px-5 sm:px-8 lg:px-20">
@@ -33,7 +33,7 @@ export default function NewPatientPage() {
             { num: "01", color: "bg-primary", title: "Book Your Appointment", desc: "Schedule online or call (817) 962-0182. Same-day appointments available. Se Habla Español." },
             { num: "02", color: "bg-sage", title: "Meet Your Doctor", desc: "Your consultation covers your health history, current concerns, and goals. We match you with the right doctor." },
             { num: "03", color: "bg-accent", title: "Comprehensive Assessment", desc: "Digital X-rays, sEMG nerve scan, orthopedic testing, and posture analysis. You see exactly what we see." },
-            { num: "04", color: "bg-neutral", title: "Your Personalized Plan", desc: "Based on your results, we create a corrective care plan using the MaxLiving 5 Essentials. First adjustment included." },
+            { num: "04", color: "bg-neutral", title: "Your Personalized Plan", desc: "Based on your results, we create a corrective care plan using the MaxLiving 5 Essentials." },
           ].map((step) => (
             <div key={step.num} className="flex gap-5 items-start">
               <div className={`w-12 h-12 rounded-full ${step.color} text-white flex items-center justify-center font-black text-[1.1rem] flex-shrink-0`}>{step.num}</div>
@@ -51,7 +51,7 @@ export default function NewPatientPage() {
             <div className="mb-4"><span className="text-[clamp(56px,6vw,80px)] font-black text-accent leading-none">$67</span><span className="block text-[clamp(24px,2vw,32px)] font-normal text-neutral line-through mt-1">Normally $320</span></div>
             <p className="text-[1.1rem] font-bold text-primary mb-5">You save $253 on your first visit.</p>
             <ul className="space-y-3 mb-7">
-              {["Comprehensive consultation", "Full spinal examination", "Digital spinal X-rays", "sEMG nerve scan", "Posture analysis", "Your first chiropractic adjustment"].map((item) => (
+              {["Comprehensive consultation", "Full spinal examination", "Digital spinal X-rays", "sEMG nerve scan", "Posture analysis", "Doctor recommendations"].map((item) => (
                 <li key={item} className="flex gap-2.5 items-center"><CheckIcon className="w-5 h-5 text-primary flex-shrink-0" /><span className="text-linen">{item}</span></li>
               ))}
             </ul>

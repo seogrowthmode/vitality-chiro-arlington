@@ -11,7 +11,7 @@ export const leadConfig = {
     normalPriceDisplay: '$320',
     savings: 253,
     savingsDisplay: '$253',
-    includes: 'Consultation, comprehensive exam, X-rays, sEMG nerve scan, and first adjustment',
+    includes: 'Consultation, comprehensive exam, X-rays, sEMG nerve scan, and posture analysis',
   },
   source: 'Website',
 }

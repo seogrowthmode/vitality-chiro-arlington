@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 };
 
 const faqItems = [
-  { question: "How quickly will I feel relief?", answer: "Many patients feel some relief after their first adjustment. However, corrective care is about lasting structural change, not just symptom relief. Your personalized care plan typically spans several weeks to months depending on the severity of your condition." },
+  { question: "How quickly will I feel relief?", answer: "Many patients begin noticing improvement once care starts. However, corrective care is about lasting structural change, not just symptom relief. Your personalized care plan typically spans several weeks to months depending on the severity of your condition." },
   { question: "Do I need X-rays for back pain?", answer: "We take X-rays as part of your $67 new patient exam to see the actual structure of your spine. This allows us to identify misalignments, degeneration, and other issues that are causing your pain — and to track measurable improvement over time." },
   { question: "Is chiropractic better than pain medication?", answer: "Pain medication masks symptoms. Chiropractic care addresses the cause. We don't tell patients to stop their medications — we work alongside your healthcare team to reduce your dependence on pain relief by fixing the underlying structural problem." },
 ];
@@ -100,7 +100,7 @@ export default function BackPainPage() {
           <div className="flex items-center justify-center">
             <div className="bg-white rounded-[18px] p-9 shadow-[var(--shadow-card-lg)] text-center max-w-[340px]">
               <p className="text-[1.1rem] font-bold mb-3">Sound familiar?</p>
-              <p className="text-[0.88rem] text-text-muted mb-5">Our $67 exam includes X-rays, nerve scan, and your first adjustment. Find out what&apos;s causing your pain.</p>
+              <p className="text-[0.88rem] text-text-muted mb-5">Our $67 exam includes X-rays, nerve scan, and posture analysis. Find out what&apos;s causing your pain.</p>
               <Link href="/schedule" className="inline-flex items-center justify-center gap-2 w-full px-8 py-4 bg-primary text-white rounded-[16px] font-bold hover:bg-primary-dark transition-all">Book Your $67 Exam &rarr;</Link>
               <p className="text-[0.75rem] text-text-muted mt-3">Se Habla Espa&ntilde;ol &middot; (817) 962-0182</p>
             </div>

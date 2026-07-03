@@ -15,7 +15,7 @@ const generalFaq = [
   {
     question: "What should I expect at my first visit to Vitality Family Chiropractic?",
     answer:
-      "Your first visit includes a one-on-one consultation with one of our doctors, a comprehensive chiropractic examination, digital spinal X-rays, an sEMG nerve scan to measure nervous system function, and a posture and range of motion analysis. After reviewing your results, your doctor will perform your first adjustment and discuss a personalized care plan tailored to your health goals. The entire visit typically takes about 45-60 minutes. We offer a new patient special of $67 for the complete exam package (normally $320). Call (817) 962-0182 to schedule.",
+      "Your first visit includes a one-on-one consultation with one of our doctors, a comprehensive chiropractic examination, digital spinal X-rays, an sEMG nerve scan to measure nervous system function, and a posture and range of motion analysis. After reviewing your results, your doctor will discuss a personalized care plan tailored to your health goals. The entire visit typically takes about 45-60 minutes. We offer a new patient special of $67 for the complete exam package (normally $320). Call (817) 962-0182 to schedule.",
   },
   {
     question: "Who are the doctors at Vitality Family Chiropractic?",
@@ -38,7 +38,7 @@ const costInsuranceFaq = [
   {
     question: "How much does a chiropractor cost in Arlington, TX?",
     answer:
-      "At Vitality Family Chiropractic, our new patient special is $67 for a comprehensive exam, consultation, digital X-rays, sEMG nerve scan, posture analysis, and your first adjustment (normally $320, saving you $253). Ongoing visit costs vary depending on your care plan, insurance coverage, and specific needs. We work with many insurance plans and offer affordable self-pay rates. Call (817) 962-0182 to discuss pricing and payment options.",
+      "At Vitality Family Chiropractic, our new patient special is $67 for a comprehensive exam, consultation, digital X-rays, sEMG nerve scan, and posture analysis (normally $320, saving you $253). Ongoing visit costs vary depending on your care plan, insurance coverage, and specific needs. We work with many insurance plans and offer affordable self-pay rates. Call (817) 962-0182 to discuss pricing and payment options.",
   },
   {
     question: "Do you accept insurance at your Arlington chiropractic office?",
@@ -173,7 +173,7 @@ export default function FAQPage() {
                 <p className="text-neutral line-through text-[0.95rem] mb-2">Normally $320</p>
                 <p className="text-primary font-bold mb-3">You save $253.</p>
                 <p className="text-[0.88rem] text-text-muted mb-5">
-                  Includes: Consultation &middot; Exam &middot; X-Rays &middot; sEMG Nerve Scan &middot; First Adjustment
+                  Includes: Consultation &middot; Exam &middot; X-Rays &middot; sEMG Nerve Scan &middot; Posture Analysis
                 </p>
                 <Link href="/schedule" className="inline-flex items-center gap-2 px-10 py-4 bg-primary text-white rounded-[16px] font-bold hover:bg-primary-dark transition-all">
                   Book Your $67 Exam &rarr;

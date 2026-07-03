@@ -123,7 +123,7 @@ export default function PediatricPage() {
         <div className="mb-3"><span className="text-[clamp(56px,6vw,72px)] font-black text-accent leading-none">$67</span></div>
         <p className="text-[1.1rem] text-neutral line-through mb-2">Normally $320</p>
         <p className="text-[1.2rem] font-bold text-primary mb-5">Save $253 on your child&apos;s first exam.</p>
-        <p className="text-text-muted mb-7">Includes age-appropriate consultation, gentle examination, and first adjustment. X-rays only when clinically necessary for children.</p>
+        <p className="text-text-muted mb-7">Includes age-appropriate consultation, gentle examination, and doctor recommendations. X-rays only when clinically necessary for children.</p>
         <Link href="/schedule" className="inline-flex items-center gap-2 px-10 py-4 bg-primary text-white rounded-[16px] font-bold text-[1.05rem] hover:bg-primary-dark transition-all">Book Your Child&apos;s Exam &rarr;</Link>
         <p className="text-[0.82rem] text-text-muted mt-4">Se Habla Espa&ntilde;ol &middot; (817) 962-0182 &middot; All Ages Welcome</p>
       </div></section></ScrollReveal>

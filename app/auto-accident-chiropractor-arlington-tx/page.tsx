@@ -166,7 +166,7 @@ export default function AutoAccidentPage() {
               <span className="font-black text-[clamp(30px,3.5vw,44px)] text-accent">car accident?</span>
             </h2>
             <p className="text-text-muted mb-7">
-              Don&apos;t wait for the pain to set in. Hidden injuries worsen over time. Our comprehensive post-accident exam includes X-rays, nerve scans, and your first adjustment for just $67.
+              Don&apos;t wait for the pain to set in. Hidden injuries worsen over time. Our comprehensive post-accident exam includes X-rays, nerve scans, and posture analysis for just $67.
             </p>
             <Link href="/schedule" className="inline-flex items-center gap-2 px-10 py-4 bg-accent text-white rounded-[16px] font-bold text-[1.05rem] hover:bg-accent-dark transition-all">
               Book Same-Day Appointment &rarr;

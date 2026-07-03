@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 };
 
 const faqItems = [
-  { question: "What's included in the $67 new patient exam?", answer: "Your $67 exam (normally $320) includes a comprehensive consultation, full spinal examination, digital X-rays, sEMG nerve scan, posture analysis, and your first chiropractic adjustment. You save $253 and leave with a clear picture of your spinal health." },
+  { question: "What's included in the $67 new patient exam?", answer: "Your $67 exam (normally $320) includes a comprehensive consultation, full spinal examination, digital X-rays, sEMG nerve scan, and posture analysis. You save $253 and leave with a clear picture of your spinal health." },
   { question: "Do you specialize in prenatal chiropractic?", answer: "Yes! Dr. Elise and Dr. Mary are both Webster Technique certified. We specialize in prenatal chiropractic care, helping moms-to-be stay comfortable, reduce back pain, and prepare for healthier deliveries." },
   { question: "Is chiropractic safe for my baby or child?", answer: "Absolutely. Pediatric adjustments use finger-tip pressure lighter than what you'd use to check a ripe tomato. Dr. Elise has adjusted infants as young as 2 days old." },
   { question: "What's the MaxLiving 5 Essentials approach?", answer: "MaxLiving's 5 Essentials are: Core Chiropractic, Nutrition, Exercise, Mindset, and Toxin Reduction. We address your whole health — not just your spine." },
@@ -187,8 +187,8 @@ export default function HomePage() {
           <span className="eyebrow text-accent">NEW PATIENT SPECIAL</span>
           <h2 className="leading-none"><span className="block text-[clamp(56px,6vw,80px)] font-black text-accent">$67.</span><span className="block text-[clamp(24px,2.5vw,32px)] font-normal text-neutral line-through mt-1">Normally $320.</span></h2>
           <div className="text-[1.2rem] font-bold text-primary my-4">You save $253.</div>
-          <p className="text-[0.95rem] text-text-muted mb-2">Includes: Consultation &middot; Comprehensive Exam &middot; Spinal X-Rays &middot; First Adjustment</p>
-          <p className="text-[0.88rem] text-text-muted mb-7">sEMG nerve scan included. Same-day appointments available at our Arlington TX office.</p>
+          <p className="text-[0.95rem] text-text-muted mb-2">Includes: Consultation &middot; Comprehensive Exam &middot; Spinal X-Rays &middot; sEMG Nerve Scan</p>
+          <p className="text-[0.88rem] text-text-muted mb-7">Posture analysis included. Same-day appointments available at our Arlington TX office.</p>
           <Link href="/schedule" className="inline-flex items-center gap-2 px-10 py-4 bg-primary text-white rounded-[16px] font-bold text-[1.05rem] hover:bg-primary-dark transition-all">Book Your $67 Exam &rarr;</Link>
           <p className="text-[0.85rem] text-text-muted mt-4">Se Habla Espa&ntilde;ol &middot; (817) 962-0182</p>
         </div>
