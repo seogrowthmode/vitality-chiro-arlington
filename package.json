@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "guard:offer-copy": "node scripts/assert-no-banned-offer-copy.mjs",
+    "check:live-copy": "node scripts/assert-no-banned-live-copy.mjs https://vitalitychiroarlington.com/",
     "dev": "next dev",
+    "prebuild": "npm run guard:offer-copy",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "npm run guard:offer-copy && eslint"
   },
   "dependencies": {
     "next": "16.1.6",
