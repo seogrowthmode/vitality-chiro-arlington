@@ -109,7 +109,7 @@ body {
 .mobile-cta-bar {
   display: none;
 }
-@media (max-width: 1024px) {
+@media (max-width: 640px) {
   .mobile-cta-bar {
     display: block;
   }

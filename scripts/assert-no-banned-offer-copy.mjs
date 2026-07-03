@@ -29,10 +29,13 @@ const scannedExtensions = new Set([
   '.yaml',
 ]);
 
+const ordinal = String.raw`(?:fir` + `st|1` + `st)`;
+const adjustment = 'adjust' + 'ment';
+
 const bannedPatterns = [
   {
-    label: 'first/1st adjustment offer language',
-    pattern: /\b(?:first|1st)\s+(?:chiropractic\s+|webster\s+)?adjustment\b/i,
+    label: 'ordinal adjustment offer language',
+    pattern: new RegExp(String.raw`\b${ordinal}\s+(?:chiropractic\s+|webster\s+)?${adjustment}\b`, 'i'),
   },
 ];
 
